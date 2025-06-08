@@ -1,6 +1,7 @@
 import React from "react";
 import BG from '../../assets/HeroBanner.webp'
 import { motion } from "framer-motion";
+import SliderMarquee from "./HeroSlider";
 const HeroSection = () => {
   // Animation variants for parent and children
   const containerVariants = {
@@ -78,6 +79,8 @@ const HeroSection = () => {
                 </a>
               </a>
             </motion.div>
+          <SliderMarquee/>
+                  
           </motion.div>
         </div>
 
