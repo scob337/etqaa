@@ -37,11 +37,10 @@ const HeroSection = () => {
           >
             <motion.div
               className="inline-flex
-                w-[350px] lg:w-[362px] h-[43px]
+                w-[320px] lg:w-[362px] h-[43px]
               items-center rounded-[50px] border border-transparent justify-around pl-[10px] pr-[10px] relative overflow-hidden"
               style={{
-                width: "362px",
-                height: "43px",
+
                 background: "linear-gradient(90deg, rgba(53, 109, 247, 0.3) 0%, rgba(27, 20, 100, 0.3) 99.93%)"
               }}
               variants={itemVariants}
@@ -62,7 +61,7 @@ const HeroSection = () => {
               Top Cyber Security Company in Saudi Arabia
             </motion.h1>
             <motion.p
-              className=" lg:w-[500px] text-[#bababa] max-md:text-[16px] lg:text-[17px]"
+              className="w-[350px] lg:w-[500px] text-[#bababa] max-md:text-[16px] lg:text-[17px]"
               variants={itemVariants}
             >
               ETQAA is one of the most well-known

@@ -15,7 +15,7 @@ const SliderMarquee = () => {
   const repeatedImages = [...images, ...images];
 
   return (
-    <div className="flex overflow-hidden w-[90%] md:w-[80%] lg:w-[70%] py-4 ">
+    <div className="flex overflow-hidden w-[90%] md:w-[80%] lg:w-[80%] py-4 ">
       <div className="relative w-full">
         <div
           className="flex animate-marquee"
