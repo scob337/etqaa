@@ -167,8 +167,7 @@ const Services = () => {
     <section className="py-20 bg-[#0A162C] min-h-[80vh]">
       <motion.div
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        animate="visible"  // Changed from whileInView to animate
         variants={containerVariants}
         className="max-w-7xl mx-auto px-4"
       >
