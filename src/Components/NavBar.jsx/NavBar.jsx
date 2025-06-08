@@ -145,7 +145,7 @@ import React, { useState } from "react";
               <a href="#" className="flex items-center group">
                 <div className="bg-blue-600 group-hover:bg-blue-700 p-1.5 rounded-lg transition-colors duration-300 w-8 h-8" />
                 <span className="ml-2 text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
-                  AcmePro
+                  ETQAA
                 </span>
               </a>
             </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import BG from '../../assets/HeroBanner.webp'
+import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <div className="flex flex-col h-screen">
@@ -12,7 +13,9 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black/60 z-0"></div>
         <div className="flex flex-col gap-5 max-md:p-1 relative z-10">
           <div
-            className="inline-flex items-center rounded-[50px] border border-transparent justify-around pl-[10px] pr-[10px] relative overflow-hidden"
+            className="inline-flex
+              w-[350px] lg:w-[362px] h-[43px]
+            items-center rounded-[50px] border border-transparent justify-around pl-[10px] pr-[10px] relative overflow-hidden"
             style={{
               width: "362px",
               height: "43px",
@@ -28,7 +31,15 @@ const HeroSection = () => {
               }}>Best</button>
             <p className="text-[17px] text-center">Cyber Security Company</p>
           </div>
-          <h1 className="lg:text-[48px] max-md:text-[36px] font-bold lg:w-[480px] text-[#f7f7fa]">Top Cyber Security Company in Saudi Arabia</h1>
+          {/* استبدل h1 بـ motion.h1 وأضف الأنيميشن */}
+          <motion.h1
+            className="lg:text-[48px] max-md:text-[36px] font-bold lg:w-[480px] text-[#f7f7fa]"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            Top Cyber Security Company in Saudi Arabia
+          </motion.h1>
           <p className=" lg:w-[500px] text-[#bababa] max-md:text-[16px] lg:text-[17px]"> ETQAA is one of the most well-known
             <span className="font-bold"> Cyber Security Companies in KSA</span>, and it aims to help organizations survive in today’s challenging cybersecurity landscape. We have a vision to help companies overcome security challenges and tackle threats in the current digital era. We offer complete cybersecurity solutions so companies can make the most out of our services.
           </p>
