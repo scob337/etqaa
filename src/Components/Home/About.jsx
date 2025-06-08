@@ -1,72 +1,97 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const About = () => {
+  const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+  };
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.95, x: 40 },
+    visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+  const textVariants = {
+    hidden: { opacity: 0, x: -40 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
   return (
-<div className="bg-[#0A162C]">
+    <section className="w-full mx-auto py-14 bg-[#0A162C]">
+      {/* Title */}
+      <motion.div
+        className="flex w-[320px] lg:w-[362px] h-[43px] mx-auto items-center rounded-[50px] border border-transparent justify-around pl-[10px] pr-[10px] relative overflow-hidden"
+        style={{
+          background: "linear-gradient(90deg, rgba(53, 109, 247, 0.3) 0%, rgba(27, 20, 100, 0.3) 99.93%)"
+        }}
+        variants={itemVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        <p className="text-[24px] text-center text-white font-semibold">Who We Are</p>
+      </motion.div>
 
-<div id="about" className="relative bg-[#0A162C] text-white overflow-hidden ">
-    <div className="max-w-7xl mx-auto bg-[#0A162C]">
-        <div className="relative z-10 pb-8 bg-[#0A162C] sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <svg
-                className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-[#0A162C] transform translate-x-1/2"
-                fill="currentColor"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="none"
-                aria-hidden="true"
-            >
-                <polygon points="50,0 100,0 50,100 0,100"></polygon>
-            </svg>
-
-
-
-            <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                <div className="sm:text-center lg:text-left">
-                    <h2 className="my-6  tracking-tight lg:w-[90%]
-                     font-bold text-white sm:text-xl md:text-2xl lg:text-4xl">
-                    Best Saudi Cyber Security Company
-
-                    </h2>
-                    <p className="text-white">
-                    ETQAA is one of the biggest and most trustworthy names in the Kingdom of Saudi Arabia when it comes to choosing a reliable cyber security company. Our wide range of services addresses the requirements of businesses and helps them deal with different threats that can damage the reputation of companies and cause heavy financial losses. Our goals are aligned with the Saudi Vision of 2030, which is to create an ambitious nation that can thrive at all levels and compete with other nations by meeting global standards.
-
- 
-
-As the Best Cyber Security Company in Saudi Arabia, we offer a broad range of services that can resolve the security issues of organizations operating in different industries. Our cybersecurity firm offers threat intelligence, email security, cloud security, application security, endpoint detection and response, data loss prevention, and more. You will hardly get such a range of services from other companies, so we aim to cover all aspects of cybersecurity that can help businesses protect their digital assets and precious business resources.
-                    </p>
-                </div>
-            </main>
-        </div>
-    </div>
-    <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-            className="h-56 w-full object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="https://securitypact.net/wp-content/uploads/2024/09/SOAR-Services.png"
-            alt=""
-        />
-    </div>
-</div>
-
-
-<div class="relative  flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
-
-    <div class="w-full h-64 lg:w-1/2 lg:h-auto max-md:mt-3">
-        <img class="h-full w-full object-cover" src="https://securitypact.net/wp-content/uploads/2024/09/security.webp" alt="Winding mountain road"/>
-    </div>
-
-    <div
-        class="max-w-lg bg-[#0A162C] text-white md:max-w-2xl md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-24 xl:ml-12">
-        <div class="flex flex-col p-12 md:px-16">
-            <h2 class="text-2xl font-medium uppercase text-white-800 lg:text-4xl">ETQAA </h2>
-            <p class="mt-4">
-            Furthermore, we have a team of experienced and competent professionals in our company who are aware of the latest tools and technologies and the current industry practices. Our team is comprised of skilled individuals who have worked in different industries and know the demands of different sectors. With relevant certifications and higher qualifications, we can add real value to your business by building a solid defense mechanism that can shield your assets and protect them from cyber thieves. ETQAA also collaborates and forms partnerships with global companies that showcase our credibility as a trusted cybersecurity company. Additionally, our proven and tested methods give complete assurance to the clients that they will get foolproof security for their digital assets, networks, systems, and applications so they can focus on their business operations to keep their operational efficiency on track.
-
-
+      <div className="w-full h-full flex flex-col items-center md:py-4 py-10">
+        {/* First Row */}
+        <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col lg:gap-10 gap-6 justify-center lg:items-stretch md:items-center mt-8">
+          <motion.img
+            className="md:w-[48%] w-full rounded-xl shadow-lg object-cover min-h-[260px] max-h-[340px]"
+            src="https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg"
+            alt="Data Loss Prevention"
+            variants={imageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          />
+          <motion.div
+            className="md:w-[52%] w-full bg-[#101d37] text-gray-200 md:p-8 p-4 rounded-xl flex flex-col justify-center shadow-lg"
+            variants={textVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-cyan-400 mb-4">
+              Leading Cybersecurity Solutions in Saudi Arabia
+            </h2>
+            <p className="text-md md:text-lg">
+              ETQAA is a trusted name in cybersecurity, dedicated to protecting businesses across the Kingdom of Saudi Arabia. 
+              Our mission is to empower organizations with advanced security solutions, ensuring their digital assets, data, and operations are always safeguarded.
+              <br /><br />
+              We combine deep industry expertise, certified professionals, and the latest technologies to deliver comprehensive protection against evolving cyber threats.
             </p>
-
+          </motion.div>
         </div>
-    </div>
-</div>
-</div>
+        {/* Second Row */}
+        <div className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto flex md:flex-row flex-col-reverse lg:gap-10 gap-6 justify-center lg:items-stretch md:items-center mt-10">
+          <motion.div
+            className="md:w-[52%] w-full bg-[#101d37] text-gray-200 md:p-8 p-4 rounded-xl flex flex-col justify-center shadow-lg"
+            variants={textVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-cyan-400 mb-4">
+              Our Team & Approach
+            </h2>
+            <p className="text-md md:text-lg">
+              Our team consists of highly qualified experts with global certifications and hands-on experience in multiple industries.
+              We partner with leading technology providers and utilize proven methodologies to deliver tailored security strategies.
+              <br /><br />
+              At ETQAA, we believe in proactive defense, continuous monitoring, and rapid incident response—so you can focus on your business with confidence.
+            </p>
+          </motion.div>
+          <motion.img
+            className="md:w-[48%] w-full rounded-xl shadow-lg object-cover min-h-[260px] max-h-[340px]"
+            src="https://securitypact.net/wp-content/uploads/2024/11/Black-Box-Testing-1.jpg"
+            alt="Cybersecurity Team"
+            variants={imageVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          />
+        </div>
+      </div>
+    </section>
   )
 }
 
