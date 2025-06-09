@@ -7,9 +7,9 @@ import LanguageSwitcher from './Components/LanguageSwitcher';
 import Layout from './Components/Layout';
 import Home from './Pages/Home';
 import Services from './Pages/Services';
-import About from './Components/Home/About';
 import ServiceDetail from './Pages/ServiceDetail';
 import Contact from './Pages/Contact';
+import About from './Pages/About';
 
 const router = createBrowserRouter([
   {
