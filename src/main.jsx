@@ -5,9 +5,9 @@ import './index.css'
 import Services from './Pages/Services'
 import ServiceDetail from './Pages/ServiceDetail'
 // import About from './Pages/About'
-import Home from './pages/home'
 import Layout from './Components/layout'
 import Contact from './Pages/Contact';
+import Home from './Pages/Home';
 import About from './Pages/About'
 import './i18n/i18n';
 
