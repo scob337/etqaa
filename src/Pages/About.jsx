@@ -1,0 +1,151 @@
+import React from 'react'
+import { motion } from 'framer-motion'
+import { FaShieldAlt, FaUsers, FaCertificate, FaHandshake } from 'react-icons/fa'
+import { MdSecurity, MdArchitecture } from 'react-icons/md'
+import { RiGovernmentFill } from 'react-icons/ri'
+import { BiSolidBrain } from 'react-icons/bi'
+import { useTranslation } from 'react-i18next'
+
+const fadeIn = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 }
+}
+
+const About = () => {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
+
+  const services = [
+    { icon: <RiGovernmentFill className="text-4xl" />, title: t('about.services.grc') },
+    { icon: <MdArchitecture className="text-4xl" />, title: t('about.services.enterprise') },
+    { icon: <MdSecurity className="text-4xl" />, title: t('about.services.security') },
+    { icon: <FaShieldAlt className="text-4xl" />, title: t('about.services.soc') },
+  ];
+
+  const stats = [
+    { icon: <FaUsers />, label: t('about.stats.team') },
+    { icon: <FaHandshake />, label: t('about.stats.partners') },
+    { icon: <FaCertificate />, label: t('about.stats.certifications') },
+    { icon: <BiSolidBrain />, label: t('about.stats.innovation') }
+  ];
+
+  return (
+    <div className="bg-[#0A162C] text-white" dir={isRTL ? 'rtl' : 'ltr'}>
+      {/* Hero Section */}
+      <div className="relative h-[50vh] overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: `url(https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80)`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A162C]/80 to-[#0A162C]"></div>
+        </div>
+        <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col justify-center">
+          <motion.h1 
+            {...fadeIn}
+            className="text-5xl md:text-6xl font-bold mb-6"
+          >
+            {t('about.title')}
+          </motion.h1>
+          <motion.p 
+            {...fadeIn}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-gray-300 max-w-2xl"
+          >
+            {t('about.subtitle')}
+          </motion.p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        {/* Introduction */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <p className="text-lg text-gray-300 leading-relaxed">
+            {t('about.intro')}
+          </p>
+        </motion.div>
+
+        {/* Mission Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-[#101d37] rounded-2xl p-8 mb-20 border border-[#223366]"
+        >
+          <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            {t('about.mission.title')}
+          </h2>
+          <p className="text-gray-300 leading-relaxed">
+            {t('about.mission.content')}
+          </p>
+        </motion.div>
+
+        {/* Services Grid */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <h2 className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            {t('about.services.title')}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-[#101d37] p-6 rounded-xl border border-[#223366] hover:border-cyan-500/30 transition-all duration-300"
+              >
+                <div className="text-cyan-400 mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Vision Section */}
+        <motion.div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-2xl p-8 mb-20 border border-[#223366]">
+          <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            {t('about.vision.title')}
+          </h2>
+          <p className="text-gray-300 leading-relaxed">
+            {t('about.vision.content')}
+          </p>
+        </motion.div>
+
+        {/* Bottom Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="text-center"
+            >
+              <div className="text-cyan-400 text-4xl mb-4 flex justify-center">
+                {stat.icon}
+              </div>
+              <h3 className="text-lg font-semibold">{stat.label}</h3>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default About

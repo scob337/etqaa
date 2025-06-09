@@ -1,22 +1,18 @@
 import React from 'react';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const ContactInfo = () => {
-  // const { t } = useTranslation();
-  // const isRTL = false;
-  // const isRTL = i18n.language === 'ar';
+  const { t } = useTranslation();
 
   return (
-    <div 
-      dir="ltr"
-      className="bg-[#061224] p-8 rounded-lg shadow-xl h-full text-left border border-gray-800"
-    >
-      <h3 className="text-2xl font-bold mb-8 text-white text-left">
-        Contact Information
-      </h3>
-      
-      <div className="space-y-8">
+    <div className="bg-white/5 p-8 rounded-lg">
+      <h3 className="text-2xl font-bold mb-6">{t('contact.info.title')}</h3>
+      <div className="space-y-6">
+        <div>
+          <h4 className="font-medium mb-2">{t('contact.info.address')}</h4>
+          <p>{t('contact.info.addressValue')}</p>
+        </div>
         <div className="flex flex-row items-start group">
           <div className="mr-6 mt-1 bg-[#0A162C] p-3 rounded-xl group-hover:bg-zinc-500 transition-all duration-300">
             <FaMapMarkerAlt className="text-white w-6 h-6" />
@@ -85,8 +81,8 @@ const ContactInfo = () => {
           </a>
         </div>
       </div>
-    </div>
-  );
+      </div>
+    );
 };
 
 export default ContactInfo;

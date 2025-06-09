@@ -2,6 +2,7 @@ import React from "react";
 import BG from '../../assets/HeroBanner.webp'
 import { motion } from "framer-motion";
 import SliderMarquee from "./HeroSlider";
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   // Animation variants for parent and children
   const containerVariants = {
@@ -68,15 +69,10 @@ const HeroSection = () => {
               <span className="font-bold"> Cyber Security Companies in KSA</span>, and it aims to help organizations survive in today’s challenging cybersecurity landscape. We have a vision to help companies overcome security challenges and tackle threats in the current digital era. We offer complete cybersecurity solutions so companies can make the most out of our services.
             </motion.p>
             <motion.div className="flex gap-[16px]" variants={itemVariants}>
-              <a
-                href="https://youtu.be/9tdewlwamFw?si=hSfImLajCynDL-2r"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <a href="#" className="rounded-[10px] text-[20px] font-semibold p-[12px]   text-white" style={{ background: "linear-gradient(90deg, #356DF7 0%, #1B1464 99.93%)" }}>
+
+                <Link to="services" className="rounded-[10px] text-[20px] font-semibold p-[12px]   text-white" style={{ background: "linear-gradient(90deg, #356DF7 0%, #1B1464 99.93%)" }}>
                   Our Services
-                </a>
-              </a>
+                </Link>
             </motion.div>
           <SliderMarquee/>
                   

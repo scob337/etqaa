@@ -1,10 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 export default function ContactForm() {
-  // Remove translation logic
-  // const {i18n } = useTranslation();
-  // const isArabic = i18n.language === 'ar';
-  // const isArabic = false;
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -64,15 +63,15 @@ export default function ContactForm() {
   };
   
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-900 p-8">
+    <div className="min-h-screen flex justify-center items-center bg-gray-900 p-8" dir={isRTL ? 'rtl' : 'ltr'}>
       <div className="bg-[#061224] p-6 md:p-8 rounded-lg shadow-xl w-full max-w-2xl">
         <h3 className="text-2xl font-bold mb-6 text-white">
-          Contact Us
+          {t('contact.form.title')}
         </h3>
 
         {success && (
           <div className="mb-6 p-4 bg-green-500/20 border border-green-500 rounded-md text-green-100">
-            Your message has been sent successfully. We will contact you soon!
+            {t('contact.form.success')}
           </div>
         )}
 
@@ -85,7 +84,7 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block mb-2 text-sm font-medium text-white">
-              Name
+              {t('contact.form.name')}
             </label>
             <input
               type="text"
@@ -95,13 +94,13 @@ export default function ContactForm() {
               onChange={handleChange}
               required
               className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
-              placeholder="Enter your name"
+              placeholder={t('contact.form.name')}
             />
           </div>
 
           <div>
             <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">
-              Email
+              {t('contact.form.email')}
             </label>
             <input
               type="email"
@@ -111,13 +110,13 @@ export default function ContactForm() {
               onChange={handleChange}
               required
               className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
-              placeholder="Enter your email"
+              placeholder={t('contact.form.email')}
             />
           </div>
 
           <div>
             <label htmlFor="phone" className="block mb-2 text-sm font-medium text-white">
-              Phone
+              {t('contact.form.phone')}
             </label>
             <input
               type="tel"
@@ -126,13 +125,13 @@ export default function ContactForm() {
               value={formData.phone}
               onChange={handleChange}
               className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
-              placeholder="Enter your phone number"
+              placeholder={t('contact.form.phone')}
             />
           </div>
 
           <div>
             <label htmlFor="message" className="block mb-2 text-sm font-medium text-white">
-              Message
+              {t('contact.form.message')}
             </label>
             <textarea
               id="message"
@@ -142,7 +141,7 @@ export default function ContactForm() {
               required
               rows="4"
               className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
-              placeholder="Write your message"
+              placeholder={t('contact.form.message')}
             ></textarea>
           </div>
 
@@ -151,7 +150,7 @@ export default function ContactForm() {
             disabled={loading}
             className="w-full py-3 px-6 bg-white text-[#0A162C] font-medium rounded-md hover:bg-zinc-200 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            {loading ? "Sending..." : "Send Message"}
+            {loading ? t('contact.form.sending') : t('contact.form.submit')}
           </button>
         </form>
       </div>

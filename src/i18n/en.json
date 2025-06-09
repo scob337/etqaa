@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "partners": "Our Partner",
+    "contact": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "items": {
+      "application-security": {
+        "title": "Application Security",
+        "desc": "Protect your applications from vulnerabilities and cyber threats with advanced security solutions.",
+        "longDesc": "Our Application Security service provides comprehensive protection for your business applications. We implement multiple layers of security controls, conduct regular security assessments, and integrate security best practices throughout the development lifecycle to ensure your applications remain secure against evolving cyber threats."
+      },
+      "black-box-testing": {
+        "title": "Black Box Testing",
+        "desc": "Simulate real-world attacks to identify and fix security weaknesses in your systems.",
+        "longDesc": "Our Black Box Testing service simulates real-world cyber attacks to identify vulnerabilities in your systems. Using advanced testing methodologies, we evaluate your security posture from an attacker's perspective and provide detailed remediation guidance."
+      }
+    }
+  }
+
+,
+  "about": {
+    "title": "About ETQAA",
+    "subtitle": "A leading Saudi cybersecurity firm dedicated to providing high-quality services to government entities and businesses.",
+    "intro": "We specialize in delivering tailored solutions that protect sensitive data and uphold national interests in today's digital age. Our expert team leverages cutting-edge technologies to ensure client security, covering threat detection, risk management, and compliance.",
+    "mission": {
+      "title": "Our Mission",
+      "content": "In an increasingly complex digital landscape, ETQAA's mission is to enhance organizational resilience and secure critical assets against evolving cyber threats. We take a holistic approach, integrating governance, risk, and compliance (GRC) frameworks, security assessments, and operational support to safeguard our clients' digital frontiers."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "At ETQAA, we strive to be the trusted partner for cybersecurity in Saudi Arabia, protecting organizations across sectors through innovative solutions, expert insights, and a commitment to excellence."
+    },
+    "services": {
+      "title": "Our Services and Expertise",
+      "grc": "GRC and Architecture",
+      "enterprise": "Enterprise Architecture",
+      "security": "Security Assessment",
+      "soc": "SOC Services"
+    },
+    "stats": {
+      "team": "Expert Team",
+      "partners": "Trusted Partners",
+      "certifications": "Certifications",
+      "innovation": "Innovation"
+    }
+  }
+,
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to answer your questions and help bring your vision to life",
+    "meta": {
+      "title": "Contact ETQAA | Cybersecurity Experts",
+      "description": "Protect your business with ETQAA's leading cybersecurity solutions. Contact us to secure your digital assets and ensure your organization's safety."
+    },
+    "form": {
+      "sending": "Sending...",
+      "title": "Contact Us",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Your message has been sent successfully. We will contact you soon!",
+      "error": "Failed to send message. Please try again later."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "label": "Address",
+        "value": "Riyadh, Saudi Arabia"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+966 XX XXX XXXX"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@etqaa.com"
+      },
+      "hours": {
+        "label": "Working Hours",
+        "value": "Sunday - Thursday: 9:00 AM - 5:00 PM"
+      }
+    }
+  }
+}

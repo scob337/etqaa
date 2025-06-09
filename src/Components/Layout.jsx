@@ -1,14 +1,9 @@
 import { useState, useEffect } from 'react'
+import { Outlet } from 'react-router-dom'
 import Footer from "./Footer/Footer"
-import About from "./Home/About"
-import EndSection from "./Home/EndSection"
-import HeroSection from "./Home/HeroSection"
-import ScopeWork from "./Home/ScopeWork"
-import Services from "./Home/Services"
-import WhyUs from "./Home/WhyUs"
 import NavBar from "./NavBar.jsx/NavBar"
+import {motion , AnimatePresence } from 'framer-motion'
 import { FaArrowUp } from 'react-icons/fa'
-import { motion, AnimatePresence } from 'framer-motion'
 
 const Layout = () => {
   const [showButton, setShowButton] = useState(false)
@@ -33,17 +28,12 @@ const Layout = () => {
     })
   }
 
+
   return (
     <>
       <NavBar/>
-      <HeroSection/>
-      <About/>
-      <Services/>
-      <WhyUs/>
-      <ScopeWork/>
-      <EndSection />
+      <Outlet />
       <Footer/>
-
       <AnimatePresence>
         {showButton && (
           <motion.button

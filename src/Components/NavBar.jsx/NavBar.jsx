@@ -1,68 +1,78 @@
 
 import React, { useState } from "react";
-    
-    const navLinks = [
-      { label: "Home", href: "#" },
+import { IoIosArrowDown } from "react-icons/io";
+import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
+
+    // Replace the navLinks array with:
+    const getNavLinks = (t) => [
+      { label: t('nav.home'), href: "/" },
       {
-        label: "Services", href:"#",
+        label: t('nav.services'), 
+        href: "/services",
         dropdown: [
-          { label: "Software Suite", href: "#" },
-          { label: "Cloud Services", href: "#" },
-          { label: "Mobile Apps", href: "#" },
-          { label: "Featured Products", href: "#" },
+          { label: t('services.items.application-security.title'), href: "/services/application-security" },
+          { label: t('services.items.cloud-security.title'), href: "/services/cloud-security" },
+          { label: t('services.items.dlp.title'), href: "/services/dlp" },
+          { label: t('services.items.black-box-testing.title'), href: "/services/black-box-testing" },
         ],
       },
-      { label: "About", href: "#" },
-      {
-        label: "Our Partner", href:"#",
-        // dropdown: [
-        //   { label: "Docs", href: "#" },
-        //   { label: "Tutorials", href: "#" },
-        //   { label: "Blog", href: "#" },
-        //   { label: "Support", href: "#" },
-        // ],
-      },
-      { label: "Contact Us", href: "#", },
+      { label: t('nav.about'), href: "/about" },
+      { label: t('nav.partners'), href: "/partners" },
+      { label: t('nav.contact'), href: "/contact" },
     ];
     
     export default function NavBar() {
+      const { t, i18n } = useTranslation();
+      const navLinks = getNavLinks(t);
+      const isRTL = i18n.language === 'ar';
       const [mobileOpen, setMobileOpen] = useState(false);
       const [openDropdown, setOpenDropdown] = useState(null);
-    
+      const navigate = useNavigate();
+
+      const handleNavigation = (path) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        navigate(path);
+        setMobileOpen(false);
+      };
+
       const handleDropdown = (idx) => {
         setOpenDropdown(openDropdown === idx ? null : idx);
       };
     
       return (
-        <nav className="bg-white shadow-lg sticky top-0 z-50">
+        <nav className="bg-white shadow-lg sticky top-0 z-50" dir={isRTL ? 'rtl' : 'ltr'}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               {/* Logo/Brand */}
               <div className="flex items-center">
-                <a href="#" className="flex items-center group">
+                <div 
+                  onClick={() => handleNavigation('/')} 
+                  className="flex items-center group cursor-pointer"
+                >
                   <div className="bg-blue-600 group-hover:bg-blue-700 p-1.5 rounded-lg transition-colors duration-300 w-8 h-8" />
-                  <span className="ml-2 text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                  <span className={`${isRTL ? 'mr-2' : 'ml-2'} text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300`}>
                     ETQAA
                   </span>
-                </a>
+                </div>
               </div>
               {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center space-x-1">
+              <div className={`hidden md:flex items-center ${isRTL ? 'space-x-reverse' : 'space-x-1'}`}>
                 {navLinks.map((link, idx) =>
                   link.dropdown ? (
                     <div
-                      className="relative group "
+                      className="relative group"
                       key={link.label}
                       onMouseEnter={() => setOpenDropdown(idx)}
                       onMouseLeave={() => setOpenDropdown(null)}
                     >
-                      <a href={link.href}
-                        className="nav-link text-gray-700 hover:text-blue-600 px-4 py-2 flex items-center rounded-lg hover:bg-blue-50 transition-colors duration-200"
-                        onClick={() => handleDropdown(idx)}
-                        type="button"
+                      <div
+                        onClick={() => handleNavigation(link.href)}
+                        className="nav-link text-gray-700 hover:text-blue-600 px-4 py-2 flex items-center rounded-lg hover:bg-blue-50 transition-colors duration-200 cursor-pointer"
                       >
                         {link.label}
-                      </a>
+                      </div>
                       {/* Dropdown */}
                       <div
                         className={`dropdown-menu absolute left-0 mt-2 w-56 bg-white rounded-lg shadow-xl py-1 z-50 border border-gray-100 transition-all duration-300 ${
@@ -72,21 +82,21 @@ import React, { useState } from "react";
                         }`}
                       >
                         {link.dropdown.map((item) => (
-                          <a
-                            href={item.href}
+                          <Link
+                            to={item.href}
                             key={item.label}
                             className="block px-4 py-2.5 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
                           >
                             {item.label}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
                   ) : (
-                    <a
-                      href={link.href}
+                    <div
+                      onClick={() => handleNavigation(link.href)}
                       key={link.label}
-                      className="nav-link text-gray-700 hover:text-blue-600 px-4 py-2 flex items-center rounded-lg hover:bg-blue-50 transition-colors duration-200"
+                      className="nav-link text-gray-700 hover:text-blue-600 px-4 py-2 flex items-center rounded-lg hover:bg-blue-50 transition-colors duration-200 cursor-pointer"
                     >
                       {link.label}
                       {link.badge && (
@@ -94,7 +104,7 @@ import React, { useState } from "react";
                           {link.badge}
                         </span>
                       )}
-                    </a>
+                    </div>
                   )
                 )}
               </div>
@@ -137,17 +147,20 @@ import React, { useState } from "react";
     
           {/* Mobile Menu with animation */}
           <div
-            className={`fixed top-0 left-0 w-4/5 max-w-xs h-full bg-white shadow-2xl border-r border-gray-200 z-50 transform transition-transform duration-700 ease-in-out
-            ${mobileOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}
+            className={`fixed top-0 ${isRTL ? 'right-0' : 'left-0'} w-4/5 max-w-xs h-full bg-white shadow-2xl border-r border-gray-200 z-50 transform transition-transform duration-700 ease-in-out
+            ${mobileOpen ? 'translate-x-0' : isRTL ? 'translate-x-full' : '-translate-x-full'} md:hidden`}
           >
             {/* Logo at the top of mobile menu */}
             <div className="flex flex-col items-center pt-6 pb-2">
-              <a href="#" className="flex items-center group">
+              <div 
+                onClick={() => handleNavigation('/')} 
+                className="flex items-center group cursor-pointer"
+              >
                 <div className="bg-blue-600 group-hover:bg-blue-700 p-1.5 rounded-lg transition-colors duration-300 w-8 h-8" />
                 <span className="ml-2 text-lg font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
                   ETQAA
                 </span>
-              </a>
+              </div>
             </div>
             <div className="px-2 pt-2 pb-4 space-y-1">
               {navLinks.map((link, idx) =>
@@ -164,7 +177,8 @@ import React, { useState } from "react";
                           openDropdown === idx ? "rotate-180" : ""
                         }`}
                       >
-                        ▼
+                        <IoIosArrowDown />
+
                       </span>
                     </button>
                     <div
@@ -174,20 +188,20 @@ import React, { useState } from "react";
                     >
                       <div className="pl-4 mt-1 space-y-1">
                         {link.dropdown.map((item) => (
-                          <a
-                            href={item.href}
+                          <Link
+                            to={item.href}
                             key={item.label}
                             className="block px-4 py-2 rounded-lg text-sm text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200"
                           >
                             {item.label}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
                   </div>
                 ) : (
-                  <a
-                    href={link.href}
+                  <div
+                    onClick={() => handleNavigation(link.href)}
                     key={link.label}
                     className="block px-4 py-3 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-colors duration-200"
                   >
@@ -197,7 +211,7 @@ import React, { useState } from "react";
                         {link.badge}
                       </span>
                     )}
-                  </a>
+                  </div>
                 )
               )}
             </div>

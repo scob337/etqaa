@@ -1,0 +1,228 @@
+{
+  "services": [
+    {
+      "id": "application-security",
+      "title": "Application Security",
+      "desc": "Protect your applications from vulnerabilities and cyber threats with advanced security solutions.",
+      "longDesc": "Our Application Security service provides comprehensive protection for your business applications. We implement multiple layers of security controls, conduct regular security assessments, and integrate security best practices throughout the development lifecycle to ensure your applications remain secure against evolving cyber threats.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg"
+    },
+    {
+      "id": "black-box-testing",
+      "title": "Black Box Testing",
+      "desc": "Simulate real-world attacks to identify and fix security weaknesses in your systems.",
+      "longDesc": "Our Black Box Testing service simulates real-world cyber attacks to identify vulnerabilities in your systems. Using advanced testing methodologies, we evaluate your security posture from an attacker's perspective and provide detailed remediation guidance.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/11/Black-Box-Testing-1.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Black-Box-Testing-1.jpg"
+    },
+    {
+      "id": "cloud-security",
+      "title": "Cloud Security",
+      "desc": "Secure your cloud infrastructure and data with comprehensive cloud security services.",
+      "longDesc": "Our Cloud Security solutions ensure your cloud infrastructure remains protected across all major platforms. We implement robust security controls, monitor for threats, and maintain compliance with industry standards for cloud environments.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Cloud-Security-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Cloud-Security-Services.jpg"
+    },
+    {
+      "id": "dlp",
+      "title": "Data Loss Prevention (DLP)",
+      "desc": "Prevent unauthorized access and leakage of sensitive business data.",
+      "longDesc": "Our DLP service helps organizations protect sensitive data from loss, leakage, and unauthorized access. We implement comprehensive policies and technologies to monitor, detect, and prevent data breaches across all your systems and networks.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg"
+    },
+    {
+      "id": "data-protection",
+      "title": "Data Protection",
+      "desc": "Ensure the confidentiality, integrity, and availability of your critical data assets.",
+      "longDesc": "Our Data Protection services safeguard your critical information assets through encryption, access controls, and backup solutions. We ensure your data remains secure, compliant, and readily available for business operations.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Data-Protection-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Data-Protection-Services.jpg"
+    },
+    {
+      "id": "dfir",
+      "title": "Digital Forensics and Incident Response (DFIR)",
+      "desc": "Investigate, analyze, and respond to security incidents efficiently.",
+      "longDesc": "Our DFIR team provides rapid response to security incidents, conducting thorough investigations and analysis to determine the scope and impact of breaches. We help organizations recover quickly and implement measures to prevent future incidents.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Digital-Forensics-and-Incident-Response-DFIR-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Digital-Forensics-and-Incident-Response-DFIR-Services.jpg"
+    },
+    {
+      "id": "edr",
+      "title": "EDR Services",
+      "desc": "Advanced endpoint detection and response to protect your devices from threats.",
+      "longDesc": "Our EDR services provide continuous monitoring and response capabilities for all endpoints in your organization. We detect, investigate, and respond to advanced threats targeting your devices in real-time.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/EDR-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/EDR-Services.jpg"
+    },
+    {
+      "id": "email-security",
+      "title": "Email Security",
+      "desc": "Protect your organization from phishing, spam, and email-borne threats.",
+      "longDesc": "Our Email Security solutions defend against sophisticated email-based threats including phishing, malware, and business email compromise. We implement advanced filtering, authentication, and encryption to ensure secure communication.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Email-Security-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Email-Security-Services.jpg"
+    },
+    {
+      "id": "xdr",
+      "title": "Extended Detection and Response (XDR)",
+      "desc": "Unified security incident detection and response across all your environments.",
+      "longDesc": "Our XDR service provides comprehensive threat detection and response across multiple security layers. We correlate security data from various sources to identify and respond to sophisticated attacks more effectively.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/XDR-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/XDR-Services.jpg"
+    },
+    {
+      "id": "grc",
+      "title": "GRC Solutions",
+      "desc": "Governance, risk, and compliance solutions tailored to your business needs.",
+      "longDesc": "Our GRC solutions help organizations align security with business objectives while maintaining compliance with regulatory requirements. We provide comprehensive frameworks for managing governance, risk, and compliance effectively.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/GRC-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/GRC-Services.jpg"
+    },
+    {
+      "id": "gdpr",
+      "title": "GDPR Compliance",
+      "desc": "Achieve and maintain compliance with GDPR regulations.",
+      "longDesc": "Our GDPR compliance services help organizations meet and maintain compliance with EU data protection regulations. We provide comprehensive assessments, implementation guidance, and ongoing compliance monitoring.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/GDPR-Compliance-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/GDPR-Compliance-Services.jpg"
+    },
+    {
+      "id": "iam",
+      "title": "Identity and Access Management (IAM)",
+      "desc": "Control and manage user access to critical information and systems.",
+      "longDesc": "Our IAM solutions provide robust user authentication, authorization, and access management across your organization. We implement secure access controls while maintaining user productivity and compliance requirements.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Identity-and-Access-Management-IAM-Solution.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Identity-and-Access-Management-IAM-Solution.jpg"
+    },
+    {
+      "id": "mitre",
+      "title": "Mitre Framework",
+      "desc": "Implement industry-standard frameworks for advanced threat detection.",
+      "longDesc": "We help organizations implement the MITRE ATT&CK framework to improve threat detection and response capabilities. Our approach ensures comprehensive coverage against known attack techniques and tactics.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/MITRE-Framework-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/MITRE-Framework-Services.jpg"
+    },
+    {
+      "id": "mdm",
+      "title": "Mobile Device Management (MDM)",
+      "desc": "Secure and manage mobile devices across your organization.",
+      "longDesc": "Our MDM services provide comprehensive management and security for all mobile devices in your organization. We ensure secure access to corporate resources while protecting sensitive data on mobile devices.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Mobile-Device-Management-MDM-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Mobile-Device-Management-MDM-Services.jpg"
+    },
+    {
+      "id": "network-security",
+      "title": "Network Posture Security Services",
+      "desc": "Assess and strengthen your network security posture.",
+      "longDesc": "Our Network Security services provide comprehensive protection for your network infrastructure. We implement advanced security controls, monitor for threats, and ensure your network remains resilient against attacks.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Network-Security-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Network-Security-Services.jpg"
+    },
+    {
+      "id": "ot-security",
+      "title": "Operational Technology (OT) Security",
+      "desc": "Protect your industrial and operational technology environments.",
+      "longDesc": "Our OT Security services protect industrial control systems and operational technology environments from cyber threats. We implement specialized security controls while maintaining operational continuity.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/OT-Security-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/OT-Security-Services.jpg"
+    },
+    {
+      "id": "pdpl",
+      "title": "PDPL Compliance",
+      "desc": "Comply with Saudi Arabia's Personal Data Protection Law (PDPL).",
+      "longDesc": "We help organizations achieve and maintain compliance with Saudi Arabia's PDPL regulations. Our services include comprehensive assessments, implementation guidance, and ongoing compliance monitoring.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/PDPL-Compliance-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/PDPL-Compliance-Services.jpg"
+    },
+    {
+      "id": "penetration-testing",
+      "title": "Penetration Testing",
+      "desc": "Identify vulnerabilities before attackers do with expert penetration testing.",
+      "longDesc": "Our Penetration Testing services simulate real-world attacks to identify security weaknesses. We provide detailed reports and actionable recommendations to improve your security posture.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+    },
+    {
+      "id": "pam",
+      "title": "Privileged Access Management (PAM)",
+      "desc": "Secure, control, and monitor privileged access to critical systems.",
+      "longDesc": "Our PAM solutions provide comprehensive control over privileged access to critical systems. We implement secure access workflows, monitoring, and audit capabilities for privileged accounts.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/PAM-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/PAM-Services.jpg"
+    },
+    {
+      "id": "red-teaming",
+      "title": "Red Teaming",
+      "desc": "Simulate sophisticated attacks to test your organization's defenses.",
+      "longDesc": "Our Red Team exercises simulate sophisticated, real-world attacks to test your organization's detection and response capabilities. We provide insights into your security effectiveness and recommendations for improvement.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Red-Team-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Red-Team-Services.jpg"
+    },
+    {
+      "id": "risk-assessment",
+      "title": "Risk Assessment",
+      "desc": "Identify, evaluate, and mitigate risks to your business.",
+      "longDesc": "Our Risk Assessment services help organizations identify and evaluate security risks to their business. We provide detailed analysis and recommendations for risk mitigation strategies.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Risk-Assessment-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Risk-Assessment-Services.jpg"
+    },
+    {
+      "id": "siem",
+      "title": "SIEM Services",
+      "desc": "Centralized security information and event management for proactive threat detection.",
+      "longDesc": "Our SIEM services provide centralized logging, monitoring, and analysis of security events across your organization. We help detect and respond to security threats in real-time.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/SIEM-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/SIEM-Services.jpg"
+    },
+    {
+      "id": "soc",
+      "title": "SOC Services",
+      "desc": "24/7 Security Operations Center monitoring and incident response.",
+      "longDesc": "Our SOC services provide round-the-clock monitoring and response to security threats. We maintain continuous vigilance over your security infrastructure and respond rapidly to incidents.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/SOC-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/SOC-Services.jpg"
+    },
+    {
+      "id": "soar",
+      "title": "SOAR Services",
+      "desc": "Automate and orchestrate your security operations for faster response.",
+      "longDesc": "Our SOAR services automate and orchestrate security operations for faster incident response. We implement automated workflows and playbooks to improve security team efficiency.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/SOAR-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/SOAR-Services.jpg"
+    },
+    {
+      "id": "threat-intelligence",
+      "title": "Threat Intelligence Services",
+      "desc": "Stay ahead of cyber threats with actionable intelligence and insights.",
+      "longDesc": "Our Threat Intelligence services provide actionable insights about emerging threats and attack trends. We help organizations prepare for and respond to potential security threats.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Threat-Intelligence-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Threat-Intelligence-Services.jpg"
+    },
+    {
+      "id": "ueba",
+      "title": "User and Entity Behavior Analytics (UEBA)",
+      "desc": "Detect anomalies and insider threats with behavioral analytics.",
+      "longDesc": "Our UEBA solutions use advanced analytics to detect unusual behavior patterns that may indicate security threats. We help identify potential insider threats and compromised accounts.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/UEBA-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/UEBA-Services.jpg"
+    },
+    {
+      "id": "vapt",
+      "title": "VAPT",
+      "desc": "Vulnerability Assessment and Penetration Testing for comprehensive security.",
+      "longDesc": "Our VAPT services combine vulnerability assessment and penetration testing to provide comprehensive security evaluation. We identify and help remediate security weaknesses in your systems.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/VAPT-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/VAPT-Services.jpg"
+    },
+    {
+      "id": "vulnerability-assessment",
+      "title": "Vulnerability Assessment",
+      "desc": "Identify and address vulnerabilities across your IT environment.",
+      "longDesc": "Our Vulnerability Assessment services systematically evaluate your IT environment for security weaknesses. We provide detailed reports and remediation guidance to improve your security posture.",
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Vulnerability-Assessment-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Vulnerability-Assessment-Services.jpg"
+    }
+  ]
+}

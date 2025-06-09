@@ -1,16 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet'; // Add this import
+import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import LocationMap from '../Components/Contact/location-map';
 import ContactInfo from '../Components/Contact/contact-info';
 import ContactForm from '../Components/Contact/contact-form';
 
 const Contact = () => {
-  // const { i18n } = useTranslation();
-  // const isArabic = i18n.language === 'ar';
-  // const isArabic = false;
-  // const direction = isArabic ? 'rtl' : 'ltr';
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
 
   // تأثيرات الأنيميشن
   const containerVariants = {
@@ -39,38 +37,25 @@ const Contact = () => {
     <section 
       id="contact" 
       className={`py-16 px-4 md:px-8 bg-[#0A162C] text-white`}
-      dir="ltr"
+      dir={isRTL ? 'rtl' : 'ltr'}
     >
-      {/* SEO Optimization */}
       <Helmet>
-        <title>Contact ETQAA | Cybersecurity Experts</title>
-        <meta name="description" content="Protect your business with ETQAA's leading cybersecurity solutions. Contact us to secure your digital assets and ensure your organization's safety." />
+        <title>{t('contact.meta.title')}</title>
+        <meta name="description" content={t('contact.meta.description')} />
         <meta name="keywords" content="cybersecurity, ETQAA, information security, network protection, cyber defense, data security, Saudi Arabia" />
-        <meta property="og:title" content="Contact ETQAA | Cybersecurity Experts" />
-        <meta property="og:description" content="Protect your business with ETQAA's leading cybersecurity solutions. Contact us to secure your digital assets and ensure your organization's safety." />
+        <meta property="og:title" content={t('contact.meta.title')} />
+        <meta property="og:description" content={t('contact.meta.description')} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://etqaa.com/contact" />
       </Helmet>
 
       <div className="max-w-screen-2xl mx-auto">
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={containerVariants}
-          className="text-center mb-16"
-        >
-          <motion.h2 
-            variants={itemVariants}
-            className="text-3xl md:text-4xl font-bold mb-4"
-          >
-            Contact Us
+        <motion.div className="text-center mb-16">
+          <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-4">
+            {t('contact.title')}
           </motion.h2>
-          <motion.p 
-            variants={itemVariants}
-            className="text-xl max-w-3xl mx-auto"
-          >
-            We're here to answer your questions and help bring your vision to life
+          <motion.p variants={itemVariants} className="text-xl max-w-3xl mx-auto">
+            {t('contact.subtitle')}
           </motion.p>
         </motion.div>
 

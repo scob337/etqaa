@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 
 const footerLinks = [
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Service", href: "#" },
-  { label: "Cookies", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Service", href: "services" },
+  { label: "About", href: "about" },
 ];
 const servicesLinks = [
   { label: "Visibility & Analytics", href: "/services/visibility-analytics" },
