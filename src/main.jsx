@@ -10,6 +10,7 @@ import Services from './Pages/Services';
 import ServiceDetail from './Pages/ServiceDetail';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
+import Partners from './Pages/Partners';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />
+      },
+      {
+        path: 'partners',
+        element: <Partners />
       }
     ]
   }

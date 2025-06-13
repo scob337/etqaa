@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function LocationMap() {
   return (
-    <div className="h-[400px] w-full bg-[#061224] relative">
+    <div className="h-[400px] w-full bg-main-bg relative">
       {/* This is a placeholder for the map. In a real application, you would use a mapping library like Google Maps, Mapbox, or Leaflet */}
       <div className="absolute inset-0 flex items-center justify-center">
         <iframe 

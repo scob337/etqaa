@@ -40,7 +40,7 @@ const ScopeWork = () => {
         initial={{ y: 50, opacity: 0 }} 
         animate={isContainerInView ? { y: 0, opacity: 1 } : { y: 50, opacity: 0 }} 
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="relative flex flex-col md:flex-row w-full bg-[#0A162C] shadow-lg border border-[#223366] rounded-lg overflow-hidden"
+        className="relative flex flex-col md:flex-row w-full bg-cyber-primary shadow-lg border border-cyber-gray-dark rounded-lg overflow-hidden"
       >
         <motion.div 
           ref={imageRef}
@@ -54,7 +54,7 @@ const ScopeWork = () => {
             alt="Cybersecurity Operations"
             className="h-full w-full rounded-md md:rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A162C] via-transparent to-transparent opacity-40"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-cyber-primary via-transparent to-transparent opacity-40"></div>
         </motion.div>
 
         <motion.div 

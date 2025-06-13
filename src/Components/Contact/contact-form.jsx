@@ -63,9 +63,9 @@ export default function ContactForm() {
   };
   
   return (
-    <div className="min-h-screen flex justify-center items-center bg-gray-900 p-8" dir={isRTL ? 'rtl' : 'ltr'}>
-      <div className="bg-[#061224] p-6 md:p-8 rounded-lg shadow-xl w-full max-w-2xl">
-        <h3 className="text-2xl font-bold mb-6 text-white">
+    <div className="min-h-screen flex justify-center items-center bg-cyber-primary  p-8" dir={isRTL ? 'rtl' : 'ltr'}>
+      <div className="bg-cyber-secondary  p-6 md:p-8 rounded-lg shadow-xl w-full max-w-2xl">
+        <h3 className="text-2xl font-bold mb-6 text-main-text">
           {t('contact.form.title')}
         </h3>
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="name" className="block mb-2 text-sm font-medium text-white">
+            <label htmlFor="name" className="block mb-2 text-sm font-medium text-main-text">
               {t('contact.form.name')}
             </label>
             <input
@@ -93,13 +93,13 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
+              className="w-full p-3 bg-cyber-primary border border-gray-700 rounded-md focus:outline-none text-main-text"
               placeholder={t('contact.form.name')}
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-main-text">
               {t('contact.form.email')}
             </label>
             <input
@@ -109,13 +109,13 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
+              className="w-full p-3 bg-cyber-primary border border-gray-700 rounded-md focus:outline-none text-main-text"
               placeholder={t('contact.form.email')}
             />
           </div>
 
           <div>
-            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-white">
+            <label htmlFor="phone" className="block mb-2 text-sm font-medium text-main-text">
               {t('contact.form.phone')}
             </label>
             <input
@@ -124,13 +124,13 @@ export default function ContactForm() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
+              className="w-full p-3 bg-cyber-primary border border-gray-700 rounded-md focus:outline-none text-main-text"
               placeholder={t('contact.form.phone')}
             />
           </div>
 
           <div>
-            <label htmlFor="message" className="block mb-2 text-sm font-medium text-white">
+            <label htmlFor="message" className="block mb-2 text-sm font-medium text-main-text">
               {t('contact.form.message')}
             </label>
             <textarea
@@ -140,7 +140,7 @@ export default function ContactForm() {
               onChange={handleChange}
               required
               rows="4"
-              className="w-full p-3 bg-[#0A162C] border border-gray-700 rounded-md focus:outline-none text-white"
+              className="w-full p-3 bg-cyber-primary border border-gray-700 rounded-md focus:outline-none text-main-text"
               placeholder={t('contact.form.message')}
             ></textarea>
           </div>
@@ -148,7 +148,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 px-6 bg-white text-[#0A162C] font-medium rounded-md hover:bg-zinc-200 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+            className="w-full py-3 px-6 rounded-cyber bg-cyber-gradient text-cyber-dark font-bold flex items-center justify-center shadow-cyber hover:shadow-cyber-lg border border-cyber-accent/30 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
           >
             {loading ? t('contact.form.sending') : t('contact.form.submit')}
           </button>

@@ -3,25 +3,76 @@
     "home": "Home",
     "services": "Services",
     "about": "About",
-    "partners": "Our Partner",
-    "contact": "Contact Us"
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "hero": {
+    "best": "Best",
+    "company": "Cyber Security Company",
+    "heading_en": "Top <span class=\"bg-cyber-gradient bg-clip-text text-transparent\">Cyber Security</span> Company in Saudi Arabia",
+    "heading_ar": "شركة <span class=\"bg-cyber-gradient bg-clip-text text-transparent\">الأمن السيبراني</span> الرائدة في المملكة العربية السعودية</span>",
+    "description": "ETQAA is the <span class=\"font-bold text-cyber-accent\">leading cybersecurity company in Saudi Arabia</span> specializing in protecting organizations from sophisticated cyber threats. We provide comprehensive solutions including risk assessment, penetration testing, incident response, vulnerability management, and compliance with national and international standards. Our team of certified experts ensures your data and infrastructure are protected with the latest technologies and methodologies.",
+    "services_btn": "Our Services",
+    "contact_btn": "Contact Us",
+    "features": {
+      "0": "Advanced Protection",
+      "1": "Threat Intelligence",
+      "2": "Data Security",
+      "3": "Infrastructure Security"
+    }
   },
   "services": {
     "title": "Our Services",
+    "subtitle": "Comprehensive security solutions to protect your digital assets and ensure business continuity",
+    "learnMore": "Learn More",
     "items": {
-      "application-security": {
-        "title": "Application Security",
-        "desc": "Protect your applications from vulnerabilities and cyber threats with advanced security solutions.",
-        "longDesc": "Our Application Security service provides comprehensive protection for your business applications. We implement multiple layers of security controls, conduct regular security assessments, and integrate security best practices throughout the development lifecycle to ensure your applications remain secure against evolving cyber threats."
+      "penetration-testing": {
+        "title": "Penetration Testing",
+        "desc": "Identify vulnerabilities before attackers do through professional penetration testing.",
+        "longDesc": "Our Penetration Testing services simulate real-world attacks to identify security vulnerabilities in your systems. We use advanced penetration testing methodologies and provide detailed reports and actionable recommendations to improve your security posture and protect your sensitive data from potential risks."
       },
-      "black-box-testing": {
-        "title": "Black Box Testing",
-        "desc": "Simulate real-world attacks to identify and fix security weaknesses in your systems.",
-        "longDesc": "Our Black Box Testing service simulates real-world cyber attacks to identify vulnerabilities in your systems. Using advanced testing methodologies, we evaluate your security posture from an attacker's perspective and provide detailed remediation guidance."
+      "vulnerability-assessment": {
+        "title": "Vulnerability Assessment",
+        "desc": "Identify and address vulnerabilities in your IT environment.",
+        "longDesc": "Our Vulnerability Assessment services systematically evaluate your IT environment to detect security vulnerabilities. We provide detailed reports and remediation guidance to improve your security posture and reduce potential risks to your technology infrastructure."
+      },
+      "risk-assessment": {
+        "title": "Risk Assessment",
+        "desc": "Identify, evaluate, and mitigate risks threatening your business.",
+        "longDesc": "Our Risk Assessment services help organizations identify and evaluate security risks threatening their business. We provide detailed analysis and recommendations for risk mitigation strategies, enabling you to make informed decisions to protect your valuable assets and ensure business continuity."
+      },
+      "grc-service": {
+        "title": "GRC Services",
+        "desc": "Governance, Risk, and Compliance solutions tailored to your business needs.",
+        "longDesc": "Our Governance, Risk, and Compliance (GRC) solutions help organizations align security with business objectives while maintaining compliance with regulatory requirements. We provide comprehensive frameworks for effectively managing governance, risk, and compliance, helping you balance innovation and security in the evolving digital business landscape."
+      },
+      "ics-scada-testing": {
+        "title": "ICS/SCADA Testing",
+        "desc": "Test the security of Industrial Control Systems and SCADA systems to protect critical infrastructure.",
+        "longDesc": "Our Industrial Control Systems (ICS) and SCADA penetration testing services provide specialized security assessment in sensitive operational environments. We identify vulnerabilities in industrial control systems with consideration for the unique requirements of critical infrastructure, helping to protect industrial operations from sophisticated cyber threats."
+      },
+      "configuration-review": {
+        "title": "Configuration Review",
+        "desc": "Review and improve security settings in your systems and infrastructure.",
+        "longDesc": "Our Configuration Review service provides a comprehensive assessment of security settings in your systems and infrastructure. We identify configuration errors and potential vulnerabilities and provide specific recommendations to enhance your security posture according to industry best practices and security standards."
+      },
+      "secure-code-review": {
+        "title": "Secure Code Review",
+        "desc": "Identify and fix security vulnerabilities in code before deployment.",
+        "longDesc": "Our Secure Code Review service provides comprehensive analysis of code to detect security vulnerabilities early in the development lifecycle. Our experts identify potential security issues in source code and provide specific remediation guidance, helping to develop secure applications and reduce the cost of addressing security issues in later stages."
+      },
+      "red-teaming": {
+        "title": "Red Teaming",
+        "desc": "Simulate sophisticated attacks to test your organization's defenses.",
+        "longDesc": "Our Red Team exercises simulate sophisticated real-world attacks to test your organization's detection and response capabilities. We use advanced techniques and methodologies similar to those used by real attackers to evaluate the effectiveness of your security controls and provide valuable insights and recommendations for improvement."
+      },
+      "social-engineering": {
+        "title": "Social Engineering",
+        "desc": "Test your employees' cybersecurity awareness and resistance to social engineering techniques.",
+        "longDesc": "Our Social Engineering services test your employees' ability to recognize and appropriately respond to fraud and manipulation attempts. We implement realistic scenarios such as phishing, phone calls, and physical access to assess the level of security awareness in your organization and identify areas for improvement in security awareness programs."
       }
     }
   }
-
 ,
   "about": {
     "title": "About ETQAA",
@@ -85,7 +136,56 @@
       "hours": {
         "label": "Working Hours",
         "value": "Sunday - Thursday: 9:00 AM - 5:00 PM"
-      }
+      },
+      "social": "Social Media"
+    }
+  },
+  "partners": {
+    "title": "Our Strategic Partners",
+    "subtitle": "We are proud to collaborate with the world's leading cybersecurity companies to deliver integrated solutions that meet our clients' needs and ensure the highest levels of protection and security",
+    "meta": {
+      "title": "Our Partners | ETQAA",
+      "description": "Learn about ETQAA's strategic partners in cybersecurity and how we work together to deliver the best security solutions"
+    },
+    "categories": {
+      "all": "All Partners",
+      "security": "Cybersecurity",
+      "cloud": "Cloud Computing",
+      "network": "Network Security",
+      "technology": "Technology",
+      "database": "Database"
+    },
+    "cta": {
+      "title": "Want to Become a Partner?",
+      "content": "We are always looking for new strategic partnerships to expand our service offerings and deliver comprehensive security solutions. Contact us today to discuss collaboration opportunities.",
+      "button": "Contact Us"
+    },
+    "noResults": {
+      "title": "No Results Found",
+      "content": "No partners were found in this category"
+    }
+  },
+  "footer": {
+    "description": "Comprehensive cybersecurity solutions to protect your data and systems from advanced threats",
+    "main_links": "Main Links",
+    "services": "Services",
+    "get_in_touch": "Get in Touch",
+    "commitment": "We are committed to providing the highest levels of protection and security for our clients",
+    "all_rights": "All rights reserved.",
+    "privacy_policy": "Privacy Policy"
+  },
+  "end": {
+    "stats": {
+      "solutions": "Security Solutions Delivered",
+      "clients": "Satisfied Clients",
+      "success_rate": "Success Rate",
+      "support": "Support Available"
+    },
+    "cta": {
+      "title": "Ready to Secure Your Digital Assets?",
+      "description": "Let's work together to protect your business from cyber threats. Our team of experts is ready to help.",
+      "get_started": "Get Started",
+      "contact_us": "Contact Us"
     }
   }
 }

@@ -1,1 +1,113 @@
 @import "tailwindcss";
+
+:root {
+  /* الألوان الأساسية */
+  --main-bg: #061224;
+  --main-text: #fff;
+  
+  /* ألوان cyber */
+  --cyber-dark: #050e1a;
+  --cyber-primary: #0A162C;
+  --cyber-secondary: #101d37;
+  --cyber-accent: #00FFFF;
+  --cyber-accent-dark: #00CCCC;
+  --cyber-green: #00FF8C;
+  --cyber-blue: #0078FF;
+  --cyber-red: #FF3E3E;
+  --cyber-purple: #7928CA;
+  --cyber-gray-dark: #1E293B;
+  --cyber-gray-light: #94A3B8;
+  
+  /* ألوان التدرجات */
+  --gradient-blue-start: #0078FF;
+  --gradient-blue-end: #00C6FF;
+  --gradient-green-start: #00CCCC;
+  --gradient-green-end: #00FF8C;
+  --gradient-purple-start: #7928CA;
+  --gradient-purple-end: #FF0080;
+  
+  /* التدرجات اللونية */
+  --cyber-gradient: linear-gradient(to right, #00CCCC, #00FF8C);
+  --blue-gradient: linear-gradient(to right, #0078FF, #00C6FF);
+  --purple-gradient: linear-gradient(to right, #7928CA, #FF0080);
+  
+  /* الظلال */
+  --shadow-cyber: 0 4px 20px 0 rgba(0, 255, 255, 0.1);
+  --shadow-cyber-lg: 0 10px 30px 0 rgba(0, 255, 255, 0.2);
+  --shadow-cyber-hover: 0 0 15px 2px rgba(0, 255, 255, 0.3);
+  
+  /* نصف القطر */
+  --rounded-cyber: 0.5rem;
+}
+
+@layer components {
+  .bg-main-bg { background-color: var(--main-bg); }
+  .text-main-bg { color: var(--main-bg); }
+  .bg-main-text { background-color: var(--main-text); }
+  .text-main-text { color: var(--main-text); }
+  
+  /* ألوان cyber */
+  .bg-cyber-dark { background-color: var(--cyber-dark); }
+  .text-cyber-dark { color: var(--cyber-dark); }
+  .bg-cyber-primary { background-color: var(--cyber-primary); }
+  .text-cyber-primary { color: var(--cyber-primary); }
+  .bg-cyber-secondary { background-color: var(--cyber-secondary); }
+  .text-cyber-secondary { color: var(--cyber-secondary); }
+  .bg-cyber-accent { background-color: var(--cyber-accent); }
+  .text-cyber-accent { color: var(--cyber-accent); }
+  .bg-cyber-accent-dark { background-color: var(--cyber-accent-dark); }
+  .text-cyber-accent-dark { color: var(--cyber-accent-dark); }
+  .bg-cyber-green { background-color: var(--cyber-green); }
+  .text-cyber-green { color: var(--cyber-green); }
+  .bg-cyber-blue { background-color: var(--cyber-blue); }
+  .text-cyber-blue { color: var(--cyber-blue); }
+  .bg-cyber-red { background-color: var(--cyber-red); }
+  .text-cyber-red { color: var(--cyber-red); }
+  .bg-cyber-purple { background-color: var(--cyber-purple); }
+  .text-cyber-purple { color: var(--cyber-purple); }
+  .bg-cyber-gray-dark { background-color: var(--cyber-gray-dark); }
+  .text-cyber-gray-dark { color: var(--cyber-gray-dark); }
+  .bg-cyber-gray-light { background-color: var(--cyber-gray-light); }
+  .text-cyber-gray-light { color: var(--cyber-gray-light); }
+  
+  /* ألوان التدرجات */
+  .bg-gradient-blue-start { background-color: var(--gradient-blue-start); }
+  .text-gradient-blue-start { color: var(--gradient-blue-start); }
+  .bg-gradient-blue-end { background-color: var(--gradient-blue-end); }
+  .text-gradient-blue-end { color: var(--gradient-blue-end); }
+  .bg-gradient-green-start { background-color: var(--gradient-green-start); }
+  .text-gradient-green-start { color: var(--gradient-green-start); }
+  .bg-gradient-green-end { background-color: var(--gradient-green-end); }
+  .text-gradient-green-end { color: var(--gradient-green-end); }
+  .bg-gradient-purple-start { background-color: var(--gradient-purple-start); }
+  .text-gradient-purple-start { color: var(--gradient-purple-start); }
+  .bg-gradient-purple-end { background-color: var(--gradient-purple-end); }
+  .text-gradient-purple-end { color: var(--gradient-purple-end); }
+  
+  /* التدرجات اللونية */
+  .bg-cyber-gradient { 
+    background-image: var(--cyber-gradient);
+  }
+  .bg-blue-gradient { 
+    background-image: var(--blue-gradient);
+  }
+  .bg-purple-gradient { 
+    background-image: var(--purple-gradient);
+  }
+  
+  /* الظلال */
+  .shadow-cyber { 
+    box-shadow: var(--shadow-cyber);
+  }
+  .shadow-cyber-lg { 
+    box-shadow: var(--shadow-cyber-lg);
+  }
+  .shadow-cyber-hover { 
+    box-shadow: var(--shadow-cyber-hover);
+  }
+  
+  /* نصف القطر */
+  .rounded-cyber { 
+    border-radius: var(--rounded-cyber);
+  }
+}

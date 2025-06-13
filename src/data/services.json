@@ -1,228 +1,516 @@
 {
   "services": [
     {
-      "id": "application-security",
-      "title": "Application Security",
-      "desc": "Protect your applications from vulnerabilities and cyber threats with advanced security solutions.",
-      "longDesc": "Our Application Security service provides comprehensive protection for your business applications. We implement multiple layers of security controls, conduct regular security assessments, and integrate security best practices throughout the development lifecycle to ensure your applications remain secure against evolving cyber threats.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg"
-    },
-    {
-      "id": "black-box-testing",
-      "title": "Black Box Testing",
-      "desc": "Simulate real-world attacks to identify and fix security weaknesses in your systems.",
-      "longDesc": "Our Black Box Testing service simulates real-world cyber attacks to identify vulnerabilities in your systems. Using advanced testing methodologies, we evaluate your security posture from an attacker's perspective and provide detailed remediation guidance.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/11/Black-Box-Testing-1.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Black-Box-Testing-1.jpg"
-    },
-    {
-      "id": "cloud-security",
-      "title": "Cloud Security",
-      "desc": "Secure your cloud infrastructure and data with comprehensive cloud security services.",
-      "longDesc": "Our Cloud Security solutions ensure your cloud infrastructure remains protected across all major platforms. We implement robust security controls, monitor for threats, and maintain compliance with industry standards for cloud environments.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Cloud-Security-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Cloud-Security-Services.jpg"
-    },
-    {
-      "id": "dlp",
-      "title": "Data Loss Prevention (DLP)",
-      "desc": "Prevent unauthorized access and leakage of sensitive business data.",
-      "longDesc": "Our DLP service helps organizations protect sensitive data from loss, leakage, and unauthorized access. We implement comprehensive policies and technologies to monitor, detect, and prevent data breaches across all your systems and networks.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg"
-    },
-    {
-      "id": "data-protection",
-      "title": "Data Protection",
-      "desc": "Ensure the confidentiality, integrity, and availability of your critical data assets.",
-      "longDesc": "Our Data Protection services safeguard your critical information assets through encryption, access controls, and backup solutions. We ensure your data remains secure, compliant, and readily available for business operations.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Data-Protection-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Data-Protection-Services.jpg"
-    },
-    {
-      "id": "dfir",
-      "title": "Digital Forensics and Incident Response (DFIR)",
-      "desc": "Investigate, analyze, and respond to security incidents efficiently.",
-      "longDesc": "Our DFIR team provides rapid response to security incidents, conducting thorough investigations and analysis to determine the scope and impact of breaches. We help organizations recover quickly and implement measures to prevent future incidents.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Digital-Forensics-and-Incident-Response-DFIR-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Digital-Forensics-and-Incident-Response-DFIR-Services.jpg"
-    },
-    {
-      "id": "edr",
-      "title": "EDR Services",
-      "desc": "Advanced endpoint detection and response to protect your devices from threats.",
-      "longDesc": "Our EDR services provide continuous monitoring and response capabilities for all endpoints in your organization. We detect, investigate, and respond to advanced threats targeting your devices in real-time.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/EDR-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/EDR-Services.jpg"
-    },
-    {
-      "id": "email-security",
-      "title": "Email Security",
-      "desc": "Protect your organization from phishing, spam, and email-borne threats.",
-      "longDesc": "Our Email Security solutions defend against sophisticated email-based threats including phishing, malware, and business email compromise. We implement advanced filtering, authentication, and encryption to ensure secure communication.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Email-Security-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Email-Security-Services.jpg"
-    },
-    {
-      "id": "xdr",
-      "title": "Extended Detection and Response (XDR)",
-      "desc": "Unified security incident detection and response across all your environments.",
-      "longDesc": "Our XDR service provides comprehensive threat detection and response across multiple security layers. We correlate security data from various sources to identify and respond to sophisticated attacks more effectively.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/XDR-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/XDR-Services.jpg"
-    },
-    {
-      "id": "grc",
-      "title": "GRC Solutions",
-      "desc": "Governance, risk, and compliance solutions tailored to your business needs.",
-      "longDesc": "Our GRC solutions help organizations align security with business objectives while maintaining compliance with regulatory requirements. We provide comprehensive frameworks for managing governance, risk, and compliance effectively.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/GRC-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/GRC-Services.jpg"
-    },
-    {
-      "id": "gdpr",
-      "title": "GDPR Compliance",
-      "desc": "Achieve and maintain compliance with GDPR regulations.",
-      "longDesc": "Our GDPR compliance services help organizations meet and maintain compliance with EU data protection regulations. We provide comprehensive assessments, implementation guidance, and ongoing compliance monitoring.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/GDPR-Compliance-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/GDPR-Compliance-Services.jpg"
-    },
-    {
-      "id": "iam",
-      "title": "Identity and Access Management (IAM)",
-      "desc": "Control and manage user access to critical information and systems.",
-      "longDesc": "Our IAM solutions provide robust user authentication, authorization, and access management across your organization. We implement secure access controls while maintaining user productivity and compliance requirements.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Identity-and-Access-Management-IAM-Solution.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Identity-and-Access-Management-IAM-Solution.jpg"
-    },
-    {
-      "id": "mitre",
-      "title": "Mitre Framework",
-      "desc": "Implement industry-standard frameworks for advanced threat detection.",
-      "longDesc": "We help organizations implement the MITRE ATT&CK framework to improve threat detection and response capabilities. Our approach ensures comprehensive coverage against known attack techniques and tactics.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/MITRE-Framework-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/MITRE-Framework-Services.jpg"
-    },
-    {
-      "id": "mdm",
-      "title": "Mobile Device Management (MDM)",
-      "desc": "Secure and manage mobile devices across your organization.",
-      "longDesc": "Our MDM services provide comprehensive management and security for all mobile devices in your organization. We ensure secure access to corporate resources while protecting sensitive data on mobile devices.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Mobile-Device-Management-MDM-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Mobile-Device-Management-MDM-Services.jpg"
-    },
-    {
-      "id": "network-security",
-      "title": "Network Posture Security Services",
-      "desc": "Assess and strengthen your network security posture.",
-      "longDesc": "Our Network Security services provide comprehensive protection for your network infrastructure. We implement advanced security controls, monitor for threats, and ensure your network remains resilient against attacks.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Network-Security-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Network-Security-Services.jpg"
-    },
-    {
-      "id": "ot-security",
-      "title": "Operational Technology (OT) Security",
-      "desc": "Protect your industrial and operational technology environments.",
-      "longDesc": "Our OT Security services protect industrial control systems and operational technology environments from cyber threats. We implement specialized security controls while maintaining operational continuity.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/OT-Security-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/OT-Security-Services.jpg"
-    },
-    {
-      "id": "pdpl",
-      "title": "PDPL Compliance",
-      "desc": "Comply with Saudi Arabia's Personal Data Protection Law (PDPL).",
-      "longDesc": "We help organizations achieve and maintain compliance with Saudi Arabia's PDPL regulations. Our services include comprehensive assessments, implementation guidance, and ongoing compliance monitoring.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/PDPL-Compliance-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/PDPL-Compliance-Services.jpg"
-    },
-    {
       "id": "penetration-testing",
-      "title": "Penetration Testing",
-      "desc": "Identify vulnerabilities before attackers do with expert penetration testing.",
-      "longDesc": "Our Penetration Testing services simulate real-world attacks to identify security weaknesses. We provide detailed reports and actionable recommendations to improve your security posture.",
+      "title": "تنفيذ اختبارات اختراق للكشف عن الثغرات الأمنية.",
+      "desc": "تحديد نقاط الضعف قبل أن يكتشفها المهاجمون من خلال اختبار الاختراق الاحترافي.",
+      "longDesc": "تقوم خدمات اختبار الاختراق لدينا بمحاكاة هجمات العالم الحقيقي لتحديد نقاط الضعف الأمنية في أنظمتك. نستخدم منهجيات متقدمة لاختبار الاختراق ونقدم تقارير مفصلة وتوصيات قابلة للتنفيذ لتحسين وضعك الأمني وحماية بياناتك الحساسة من المخاطر المحتملة.",
+      "englishTitle": "Penetration Testing",
+      "englishDesc": "Identify vulnerabilities before attackers do through professional penetration testing.",
+      "englishLongDesc": "Our penetration testing services simulate real-world attacks to identify security vulnerabilities in your systems. We use advanced penetration testing methodologies and provide detailed reports and actionable recommendations to improve your security posture and protect your sensitive data from potential risks.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "اختبار الاختراق هو عملية منهجية لتقييم أمان أنظمة تكنولوجيا المعلومات من خلال محاكاة هجمات حقيقية. يساعد في تحديد نقاط الضعف التي يمكن للمهاجمين استغلالها قبل أن يتمكنوا من اكتشافها واستغلالها."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نتبع منهجية شاملة تتضمن التخطيط والاستطلاع واكتشاف نقاط الضعف واستغلالها وتحليل النتائج وإعداد التقارير. نستخدم مزيجًا من الأدوات الآلية والاختبارات اليدوية لضمان تغطية شاملة."
+          },
+          {
+            "title": "أنواع اختبارات الاختراق",
+            "content": "نقدم مجموعة متنوعة من اختبارات الاختراق بما في ذلك اختبار الاختراق الخارجي والداخلي واختبار تطبيقات الويب واختبار الأجهزة المحمولة واختبار الشبكات اللاسلكية واختبار الهندسة الاجتماعية."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف نقاط الضعف حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة مع مراعاة متطلبات البيئات التشغيلية."
+          },
+          {
+            "title": "الفوائد",
+            "content": "تحديد نقاط الضعف قبل استغلالها، تقليل مخاطر الاختراق، الامتثال للمعايير التنظيمية، تعزيز ثقة العملاء، تحسين الوعي الأمني داخل المؤسسة."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Penetration testing is a systematic process of evaluating the security of IT systems by simulating real attacks. It helps identify vulnerabilities that attackers could exploit before they can discover and exploit them."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We follow a comprehensive methodology that includes planning, reconnaissance, vulnerability discovery, exploitation, analysis of results, and reporting. We use a combination of automated tools and manual testing to ensure thorough coverage."
+          },
+          {
+            "title": "Types of Penetration Tests",
+            "content": "We offer a variety of penetration tests including external and internal penetration testing, web application testing, mobile application testing, wireless network testing, and social engineering testing."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, detailed findings, and specific remediation recommendations. We classify vulnerabilities by severity level and provide practical guidance for remediation."
+          },
+          {
+            "title": "Benefits",
+            "content": "Identify vulnerabilities before they are exploited, reduce the risk of breaches, comply with regulatory standards, enhance customer trust, improve security awareness within the organization."
+          }
+        ]
+      },
       "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
       "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
     },
     {
-      "id": "pam",
-      "title": "Privileged Access Management (PAM)",
-      "desc": "Secure, control, and monitor privileged access to critical systems.",
-      "longDesc": "Our PAM solutions provide comprehensive control over privileged access to critical systems. We implement secure access workflows, monitoring, and audit capabilities for privileged accounts.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/PAM-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/PAM-Services.jpg"
+      "id": "vulnerability-assessment",
+      "title": "تحليل شامل لتحديد نقاط الضعف في الأنظمة.",
+      "desc": "تحديد ومعالجة نقاط الضعف في بيئة تكنولوجيا المعلومات الخاصة بك.",
+      "longDesc": "تقوم خدمات تقييم الثغرات الأمنية لدينا بتقييم بيئة تكنولوجيا المعلومات الخاصة بك بشكل منهجي للكشف عن نقاط الضعف الأمنية. نقدم تقارير مفصلة وإرشادات للمعالجة لتحسين وضعك الأمني وتقليل المخاطر المحتملة على بنيتك التحتية التكنولوجية.",
+      "englishTitle": "Vulnerability Assessment",
+      "englishDesc": "Identify and address vulnerabilities in your IT environment.",
+      "englishLongDesc": "Our vulnerability assessment services systematically evaluate your IT environment to detect security vulnerabilities. We provide detailed reports and remediation guidance to improve your security posture and reduce potential risks to your technology infrastructure.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "تقييم الثغرات الأمنية هو عملية منهجية لتحديد وتصنيف وترتيب أولويات نقاط الضعف في الأنظمة والتطبيقات والبنية التحتية. يساعد في فهم المخاطر الأمنية وتوجيه جهود المعالجة."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نستخدم مزيجًا من الأدوات الآلية والتحليل اليدوي لتحديد نقاط الضعف في الأنظمة والشبكات والتطبيقات. نقوم بتصنيف نقاط الضعف حسب مستوى الخطورة وتقديم توصيات محددة للمعالجة."
+          },
+          {
+            "title": "نطاق التقييم",
+            "content": "يشمل تقييم الثغرات الأمنية فحص أنظمة التشغيل والتطبيقات وقواعد البيانات والشبكات والخدمات السحابية والأجهزة المحمولة وأنظمة التحكم الصناعية."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف نقاط الضعف حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة."
+          },
+          {
+            "title": "الفوائد",
+            "content": "تحديد نقاط الضعف بشكل منهجي، ترتيب أولويات جهود المعالجة، تحسين الوضع الأمني العام، الامتثال للمتطلبات التنظيمية، تقليل مخاطر الاختراق."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Vulnerability assessment is a systematic process of identifying, classifying, and prioritizing vulnerabilities in systems, applications, and infrastructure. It helps understand security risks and guide remediation efforts effectively and efficiently."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We use a combination of automated tools and manual analysis to identify vulnerabilities in systems, networks, and applications. We classify vulnerabilities by severity level and provide specific remediation recommendations."
+          },
+          {
+            "title": "Assessment Scope",
+            "content": "Vulnerability assessment covers operating systems, applications, databases, networks, cloud services, mobile devices, and industrial control systems."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, detailed findings, and specific remediation recommendations. We classify vulnerabilities by severity level and provide practical guidance for remediation."
+          },
+          {
+            "title": "Benefits",
+            "content": "Systematically identify vulnerabilities, prioritize remediation efforts, improve overall security posture, comply with regulatory requirements, reduce the risk of breaches."
+          }
+        ]
+      },
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"},
+    {
+      "id": "risk-assessment",
+      "title": " تقييم دقيق للمخاطر الأمنية وتأثيرها على الأعمال.",
+      "desc": "تحديد وتقييم وتخفيف المخاطر التي تهدد أعمالك.",
+      "longDesc": "تساعد خدمات تقييم المخاطر لدينا المؤسسات على تحديد وتقييم المخاطر الأمنية التي تهدد أعمالها. نقدم تحليلاً مفصلاً وتوصيات لاستراتيجيات تخفيف المخاطر، مما يمكنك من اتخاذ قرارات مستنيرة لحماية أصولك القيمة وضمان استمرارية الأعمال.",
+      "englishTitle": "Risk Assessment",
+      "englishDesc": "Identify, evaluate, and mitigate risks threatening your business.",
+      "englishLongDesc": "Our risk assessment services help organizations identify and evaluate security risks threatening their business. We provide detailed analysis and recommendations for risk mitigation strategies, enabling you to make informed decisions to protect your valuable assets and ensure business continuity.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "تقييم المخاطر هو عملية منهجية لتحديد وتقييم وترتيب أولويات المخاطر الأمنية التي تواجه المؤسسة. يساعد في فهم التهديدات المحتملة وتأثيرها على الأعمال وتطوير استراتيجيات فعالة لإدارة المخاطر."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نتبع إطار عمل منظم لتقييم المخاطر يتضمن تحديد الأصول وتحديد التهديدات وتقييم نقاط الضعف وتحليل التأثير وتقييم احتمالية حدوث المخاطر وتطوير استراتيجيات التخفيف."
+          },
+          {
+            "title": "نطاق التقييم",
+            "content": "يشمل تقييم المخاطر المخاطر التشغيلية والمخاطر الاستراتيجية والمخاطر المالية والمخاطر التنظيمية والمخاطر السمعية والمخاطر المتعلقة بالأمن السيبراني."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا وتحليلًا للمخاطر وتوصيات محددة لاستراتيجيات التخفيف. نصنف المخاطر حسب مستوى الخطورة ونقدم إرشادات عملية لإدارة المخاطر."
+          },
+          {
+            "title": "الفوائد",
+            "content": "فهم أفضل للمخاطر التي تواجه المؤسسة، اتخاذ قرارات مستنيرة بشأن استراتيجيات إدارة المخاطر، تحسين الوضع الأمني العام، الامتثال للمتطلبات التنظيمية، حماية سمعة المؤسسة."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Risk assessment is a systematic process of identifying, evaluating, and prioritizing security risks facing an organization. It helps understand potential threats and their impact on the business and develop effective risk management strategies."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We follow a structured framework for risk assessment that includes asset identification, threat identification, vulnerability assessment, impact analysis, likelihood evaluation, and mitigation strategy development."
+          },
+          {
+            "title": "Assessment Scope",
+            "content": "Risk assessment covers operational risks, strategic risks, financial risks, regulatory risks, reputational risks, and cybersecurity risks."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, risk analysis, and specific recommendations for mitigation strategies. We classify risks by severity level and provide practical guidance for risk management."
+          },
+          {
+            "title": "Benefits",
+            "content": "Better understanding of risks facing the organization, informed decision-making about risk management strategies, improved overall security posture, compliance with regulatory requirements, protection of organizational reputation."
+          }
+        ]
+      },
+           "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+    },
+    {
+      "id": "grc-service",
+      "title": "خدمات الحوكمة والمخاطر والامتثال لتعزيز أمن المؤسسة",
+      "desc": "حلول الحوكمة والمخاطر والامتثال المصممة خصيصًا لاحتياجات عملك.",
+      "longDesc": "تساعد حلول الحوكمة والمخاطر والامتثال (GRC) لدينا المؤسسات على مواءمة الأمن مع أهداف العمل مع الحفاظ على الامتثال للمتطلبات التنظيمية. نقدم أطر عمل شاملة لإدارة الحوكمة والمخاطر والامتثال بفعالية، مما يساعدك على تحقيق التوازن بين الابتكار والأمان في بيئة الأعمال الرقمية المتطورة.",
+      "englishTitle": "GRC Service and Transformation",
+      "englishDesc": "Governance, Risk, and Compliance solutions tailored to your business needs.",
+      "englishLongDesc": "Our Governance, Risk, and Compliance (GRC) solutions help organizations align security with business objectives while maintaining compliance with regulatory requirements. We provide comprehensive frameworks for effectively managing governance, risk, and compliance, helping you balance innovation and security in the evolving digital business environment.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "الحوكمة والمخاطر والامتثال (GRC) هي استراتيجية متكاملة لإدارة الحوكمة المؤسسية وإدارة المخاطر والامتثال للمتطلبات التنظيمية. تساعد في تحسين صنع القرار وتقليل التكاليف التشغيلية وتعزيز الأداء التنظيمي."
+          },
+          {
+            "title": "خدماتنا",
+            "content": "نقدم مجموعة شاملة من خدمات GRC بما في ذلك تقييم نضج GRC وتطوير استراتيجية GRC وتنفيذ أطر عمل GRC واختياء بالمعايير الأخلاقية والقانونية."
+          },
+          {
+            "title": "مجالات التركيز",
+            "content": "تغطي خدمات GRC لدينا حوكمة تكنولوجيا المعلومات وإدارة المخاطر المؤسسية والامتثال التنظيمي وأمن المعلومات واستمرارية الأعمال وإدارة الخصوصية والبيانات."
+          },
+          {
+            "title": "منهجية التحول",
+            "content": "نتبع نهجًا منظمًا للتحول في مجال GRC يتضمن التقييم والتخطيط والتنفيذ والمراقبة والتحسين المستمر. نعمل بشكل وثيق مع فريقك لضمان نجاح مبادرات GRC."
+          },
+          {
+            "title": "الفوائد",
+            "content": "تحسين الرؤية والشفافية، تعزيز صنع القرار، تقليل تكاليف الامتثال، تحسين إدارة المخاطر، زيادة الكفاءة التشغيلية، تعزيز ثقة أصحاب المصلحة."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Governance, Risk, and Compliance (GRC) is an integrated strategy for managing corporate governance, risk management, and compliance with regulatory requirements. It helps improve decision-making, reduce operational costs, and enhance organizational performance."
+          },
+          {
+            "title": "Our Services",
+            "content": "We offer a comprehensive range of GRC services including GRC maturity assessment, GRC strategy development, GRC framework implementation, GRC tool selection and implementation, and employee training on GRC practices."
+          },
+          {
+            "title": "Focus Areas",
+            "content": "Our GRC services cover IT governance, enterprise risk management, regulatory compliance, information security, business continuity, privacy, and data governance."
+          },
+          {
+            "title": "Transformation Methodology",
+            "content": "We follow a structured approach to GRC transformation that includes assessment, planning, implementation, monitoring, and continuous improvement. We work closely with your team to ensure the success of GRC initiatives."
+          },
+          {
+            "title": "Benefits",
+            "content": "Improved visibility and transparency, enhanced decision-making, reduced compliance costs, improved risk management, increased operational efficiency, enhanced stakeholder confidence."
+          }
+        ]
+      },
+            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+    },
+    {
+      "id": "ics-scada-testing",
+      "title": "اختبار أمني متخصص لأنظمة التحكم الصناعية.",
+      "desc": "اختبار أمان أنظمة التحكم الصناعية وأنظمة SCADA لحماية البنية التحتية الحيوية.",
+      "longDesc": "توفر خدمات اختبار اختراق أنظمة التحكم الصناعية (ICS) وأنظمة SCADA لدينا تقييمًا متخصصًا للأمان في البيئات التشغيلية الحساسة. نقوم بتحديد نقاط الضعف في أنظمة التحكم الصناعية مع مراعاة المتطلبات الفريدة للبنية التحتية الحيوية، مما يساعد على حماية العمليات الصناعية من التهديدات السيبرانية المتطورة.",
+      "englishTitle": "ICS/SCADA Penetration Testing",
+      "englishDesc": "Test the security of Industrial Control Systems and SCADA systems to protect critical infrastructure.",
+      "englishLongDesc": "Our Industrial Control Systems (ICS) and SCADA penetration testing services provide specialized security assessment in sensitive operational environments. We identify vulnerabilities in industrial control systems while considering the unique requirements of critical infrastructure, helping protect industrial operations from sophisticated cyber threats.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "اختبار اختراق أنظمة التحكم الصناعية (ICS) وأنظمة SCADA هو عملية متخصصة لتقييم أمان البنية التحتية التشغيلية الحيوية. يساعد في تحديد نقاط الضعف التي يمكن للمهاجمين استغلالها للوصول إلى أنظمة التحكم الصناعية أو تعطيلها."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نتبع منهجية مصممة خصيصًا لاختبار أنظمة التحكم الصناعية تأخذ في الاعتبار الطبيعة الحساسة لهذه الأنظمة. نستخدم مزيجًا من الاختبارات غير التدخلية والمحاكاة لتقييم الأمان دون تعريض العمليات للخطر."
+          },
+          {
+            "title": "نطاق الاختبار",
+            "content": "يشمل اختبار اختراق أنظمة التحكم الصناعية تقييم أمان شبكات ICS وبروتوكولات الاتصال وأنظمة SCADA وأنظمة التحكم الموزعة (DCS) ووحدات التحكم المنطقية القابلة للبرمجة (PLC) وواجهات الإنسان والآلة (HMI)."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف نقاط الضعف حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة مع مراعاة متطلبات البيئات التشغيلية."
+          },
+          {
+            "title": "الفوائد",
+            "content": "تحديد نقاط الضعف في أنظمة التحكم الصناعية، تقليل مخاطر الهجمات السيبرانية على البنية التحتية الحيوية، تحسين الوعي الأمني في البيئات التشغيلية، الامتثال للمعايير الصناعية مثل IEC 62443، حماية استمرارية العمليات الصناعية."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Industrial Control Systems (ICS) and SCADA penetration testing is a specialized process for evaluating the security of critical operational infrastructure. It helps identify vulnerabilities that attackers could exploit to access or disrupt industrial control systems."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We follow a tailored methodology for testing industrial control systems that takes into account the sensitive nature of these systems. We use a combination of non-intrusive testing and simulation to assess security without risking operations."
+          },
+          {
+            "title": "Testing Scope",
+            "content": "ICS penetration testing covers the security assessment of ICS networks, communication protocols, SCADA systems, Distributed Control Systems (DCS), Programmable Logic Controllers (PLCs), and Human-Machine Interfaces (HMIs)."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, detailed findings, and specific remediation recommendations. We classify vulnerabilities by severity level and provide practical guidance for remediation that considers operational environment requirements."
+          },
+          {
+            "title": "Benefits",
+            "content": "Identify vulnerabilities in industrial control systems, reduce the risk of cyber attacks on critical infrastructure, improve security awareness in operational environments, comply with industry standards such as IEC 62443, protect the continuity of industrial operations."
+          }
+        ]
+      },
+            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+    },
+    {
+      "id": "configuration-review",
+      "title": "مراجعة إعدادات الأنظمة لضمان التهيئة الآمنة.",
+      "desc": "مراجعة وتحسين إعدادات الأمان في أنظمتك وبنيتك التحتية.",
+      "longDesc": "تقوم خدمة مراجعة التكوين لدينا بتقييم شامل لإعدادات الأمان في أنظمتك وبنيتك التحتية. نحدد الأخطاء في التكوين ونقاط الضعف المحتملة ونقدم توصيات محددة لتعزيز وضعك الأمني وفقًا لأفضل الممارسات الصناعية والمعايير الأمنية.",
+      "englishTitle": "Configuration Review",
+      "englishDesc": "Review and improve security settings in your systems and infrastructure.",
+      "englishLongDesc": "Our configuration review service provides a comprehensive assessment of security settings in your systems and infrastructure. We identify configuration errors and potential vulnerabilities and provide specific recommendations to enhance your security posture according to industry best practices and security standards.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "مراجعة التكوين هي عملية منهجية لتقييم إعدادات الأمان في الأنظمة والشبكات والتطبيقات. تساعد في تحديد الأخطاء في التكوين ونقاط الضعف المحتملة التي يمكن أن تؤدي إلى ثغرات أمنية."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نستخدم مزيجًا من الأدوات الآلية والتحليل اليدوي لمراجعة إعدادات التكوين ومقارنتها بأفضل الممارسات الصناعية والمعايير الأمنية. نحدد الانحرافات عن المعايير الموصى بها ونقدم توصيات للتحسين."
+          },
+          {
+            "title": "نطاق المراجعة",
+            "content": "تشمل مراجعة التكوين أنظمة التشغيل وأجهزة الشبكات وقواعد البيانات وخوادم الويب وأنظمة إدارة الهوية والوصول والخدمات السحابية وحلول الأمان."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف مشكلات التكوين حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة."
+          },
+          {
+            "title": "الفوائد",
+            "content": "تحديد وتصحيح الأخطاء في التكوين، تقليل مساحة الهجوم، تحسين الوضع الأمني العام، الامتثال للمعايير الصناعية، تعزيز أداء وكفاءة الأنظمة."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Configuration review is a systematic process of evaluating security settings in systems, networks, and applications. It helps identify configuration errors and potential vulnerabilities that could lead to security breaches."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We use a combination of automated tools and manual analysis to review configuration settings and compare them against industry best practices and security standards. We identify deviations from recommended standards and provide recommendations for improvement."
+          },
+          {
+            "title": "Review Scope",
+            "content": "Configuration review covers operating systems, network devices, databases, web servers, identity and access management systems, cloud services, and security solutions."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, detailed findings, and specific remediation recommendations. We classify configuration issues by severity level and provide practical guidance for remediation."
+          },
+          {
+            "title": "Benefits",
+            "content": "Identify and correct configuration errors, reduce attack surface, improve overall security posture, comply with industry standards, enhance system performance and efficiency."
+          }
+        ]
+      },
+           "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+    },
+    {
+      "id": "secure-code-review",
+      "title": "تدقيق أمني للكود البرمجي لضمان تطوير آمن وخالٍ من الثغرات.",
+      "desc": "تحديد وإصلاح الثغرات الأمنية في التعليمات البرمجية قبل نشرها.",
+      "longDesc": "تقوم خدمة مراجعة الكود الآمن لدينا بتحليز الشامل للتعليمات البرمجية للكشف عن الثغرات الأمنية في مرحلة مبكرة من دورة حياة التطوير. يقوم خبراؤنا بتحديد مشكلات الأمان المحتملة في الكود المصدري وتقديم إرشادات محددة للإصلاح، مما يساعد على تطوير تطبيقات آمنة وتقليل تكاليف معالجة المشكلات الأمنية في مراحل لاحقة.",
+      "englishTitle": "Secure Code Review",
+      "englishDesc": "Identify and fix security vulnerabilities in code before deployment.",
+      "englishLongDesc": "Our secure code review service provides a comprehensive analysis of code to detect security vulnerabilities early in the development lifecycle. Our experts identify potential security issues in source code and provide specific remediation guidance, helping develop secure applications and reduce the cost of addressing security issues in later stages.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "مراجعة الكود الآمن هي عملية منهجية لتحليز التعليمات البرمجية للكشف عن الثغرات الأمنية والأخطاء في التصميم. تساعد في تحديد المشكلات الأمنية في مرحلة مبكرة من دورة حياة التطوير قبل أن تصبح أكثر تكلفة للإصلاح."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نستخدم مزيجًا من التحليل الآلي والمراجعة اليدوية للكود للكشف عن الثغرات الأمنية. نقوم بتحليز الكود مقابل قائمة شاملة من الثغرات الأمنية المعروفة ونقدم توصيات محددة للإصلاح."
+          },
+          {
+            "title": "نطاق المراجعة",
+            "content": "تشمل مراجعة الكود الآمن تحليز التحقق من المدخلات والتعامل مع الأخطاء وإدارة الجلسات والتحكم في الوصول وإدارة البيانات الحساسة والتشفير وتكوين الأمان."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف الثغرات الأمنية حسب مستوى الخطورة ونقدم أمثلة على الكود الآمن للمساعدة في الإصلاح."
+          },
+          {
+            "title": "الفوائد",
+            "content": "تحديد الثغرات الأمنية في مرحلة مبكرة، تقليل تكاليف الإصلاح، تحسين جودة الكود، تعزيز الوعي الأمني بين المطورين، الامتثال لمعايير أمان التطبيقات."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Secure code review is a systematic process of analyzing code to detect security vulnerabilities and design flaws. It helps identify security issues early in the development lifecycle before they become more costly to fix."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We use a combination of automated analysis and manual code review to detect security vulnerabilities. We analyze code against a comprehensive list of known security vulnerabilities and provide specific remediation recommendations."
+          },
+          {
+            "title": "Review Scope",
+            "content": "Secure code review covers input validation, error handling, session management, access control, sensitive data management, cryptography, and security configuration."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, detailed findings, and specific remediation recommendations. We classify security vulnerabilities by severity level and provide secure code examples to assist with remediation."
+          },
+          {
+            "title": "Benefits",
+            "content": "Identify security vulnerabilities early, reduce remediation costs, improve code quality, enhance security awareness among developers, comply with application security standards."
+          }
+        ]
+      },
+      "img": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg"
     },
     {
       "id": "red-teaming",
       "title": "Red Teaming",
-      "desc": "Simulate sophisticated attacks to test your organization's defenses.",
-      "longDesc": "Our Red Team exercises simulate sophisticated, real-world attacks to test your organization's detection and response capabilities. We provide insights into your security effectiveness and recommendations for improvement.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Red-Team-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Red-Team-Services.jpg"
+      "desc": "محاكاة هجمات متطورة لاختبار دفاعات مؤسستك.",
+      "longDesc": "تقوم تمارين الفريق الأحمر لدينا بمحاكاة هجمات متطورة من العالم الحقيقي لاختبار قدرات الكشف والاستجابة في مؤسستك. نستخدم تقنيات متقدمة وأساليب مشابهة لتلك التي يستخدمها المهاجمون الحقيقيون لتقييم فعالية ضوابطك الأمنية وتقديم رؤى قيمة وتوصيات للتحسين.",
+      "englishTitle": "Red Teaming",
+      "englishDesc": "Simulate sophisticated attacks to test your organization's defenses.",
+      "englishLongDesc": "Our red team exercises simulate sophisticated real-world attacks to test the detection and response capabilities of your organization. We use advanced techniques and methods similar to those used by real attackers to evaluate the effectiveness of your security controls and provide valuable insights and recommendations for improvement.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "الفريق الأحمر هو عملية متقدمة لاختبار الأمان تتضمن محاكاة هجمات متطورة ومستهدفة لتقييم قدرات الدفاع والكشف والاستجابة في المؤسسة. يساعد في تحديد نقاط الضعف في الضوابط الأمنية والعمليات والأفراد."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نتبع منهجية منظمة تتضمن التخطيط وجمع المعلومات والاستطلاع والاستغلال والوصول والتنقل والتثبيت والتحكم والقيادة. نستخدم تقنيات وأدوات متقدمة مشابهة لتلك التي يستخدمها المهاجمون الحقيقيون."
+          },
+          {
+            "title": "نطاق الاختبار",
+            "content": "تشمل تمارين الفريق الأحمر اختبار الأمن المادي والهندسة الاجتماعية واختراق الشبكات واختراق التطبيقات والتسلل إلى الأنظمة والتحرك الجانبي وتصعيد الامتيازات والتهرب من الكشف."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا وسرد القصة الكاملة للهجوم ونتائج تفصيلية وتوصيات محددة للتحسين. نقدم أيضًا جلسة استخلاص المعلومات لمناقشة النتائج والدروس المستفادة."
+          },
+          {
+            "title": "الفوائد",
+            "content": "اختبار واقعي لقدرات الدفاع، تحديد نقاط الضعف في الضوابط الأمنية، تقييم قدرات الكشف والاستجابة، تحسين الوعي الأمني، تعزيز الاستعداد للتهديدات المتقدمة."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Red teaming is an advanced security testing process that involves simulating sophisticated, targeted attacks to evaluate an organization's defense, detection, and response capabilities. It helps identify weaknesses in security controls, processes, and people."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We follow a structured methodology that includes planning, intelligence gathering, reconnaissance, exploitation, access, navigation, installation, command and control. We use advanced techniques and tools similar to those used by real attackers."
+          },
+          {
+            "title": "Testing Scope",
+            "content": "Red team exercises cover physical security testing, social engineering, network penetration, application penetration, system infiltration, lateral movement, privilege escalation, and detection evasion."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, full attack narrative, detailed findings, and specific recommendations for improvement. We also provide a debriefing session to discuss findings and lessons learned."
+          },
+          {
+            "title": "Benefits",
+            "content": "Realistic testing of defense capabilities, identification of weaknesses in security controls, evaluation of detection and response capabilities, improved security awareness, enhanced preparedness for advanced threats."
+          }
+        ]
+      },
+            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
     },
     {
-      "id": "risk-assessment",
-      "title": "Risk Assessment",
-      "desc": "Identify, evaluate, and mitigate risks to your business.",
-      "longDesc": "Our Risk Assessment services help organizations identify and evaluate security risks to their business. We provide detailed analysis and recommendations for risk mitigation strategies.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Risk-Assessment-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Risk-Assessment-Services.jpg"
-    },
-    {
-      "id": "siem",
-      "title": "SIEM Services",
-      "desc": "Centralized security information and event management for proactive threat detection.",
-      "longDesc": "Our SIEM services provide centralized logging, monitoring, and analysis of security events across your organization. We help detect and respond to security threats in real-time.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/SIEM-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/SIEM-Services.jpg"
-    },
-    {
-      "id": "soc",
-      "title": "SOC Services",
-      "desc": "24/7 Security Operations Center monitoring and incident response.",
-      "longDesc": "Our SOC services provide round-the-clock monitoring and response to security threats. We maintain continuous vigilance over your security infrastructure and respond rapidly to incidents.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/SOC-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/SOC-Services.jpg"
-    },
-    {
-      "id": "soar",
-      "title": "SOAR Services",
-      "desc": "Automate and orchestrate your security operations for faster response.",
-      "longDesc": "Our SOAR services automate and orchestrate security operations for faster incident response. We implement automated workflows and playbooks to improve security team efficiency.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/SOAR-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/SOAR-Services.jpg"
-    },
-    {
-      "id": "threat-intelligence",
-      "title": "Threat Intelligence Services",
-      "desc": "Stay ahead of cyber threats with actionable intelligence and insights.",
-      "longDesc": "Our Threat Intelligence services provide actionable insights about emerging threats and attack trends. We help organizations prepare for and respond to potential security threats.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Threat-Intelligence-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Threat-Intelligence-Services.jpg"
-    },
-    {
-      "id": "ueba",
-      "title": "User and Entity Behavior Analytics (UEBA)",
-      "desc": "Detect anomalies and insider threats with behavioral analytics.",
-      "longDesc": "Our UEBA solutions use advanced analytics to detect unusual behavior patterns that may indicate security threats. We help identify potential insider threats and compromised accounts.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/UEBA-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/UEBA-Services.jpg"
-    },
-    {
-      "id": "vapt",
-      "title": "VAPT",
-      "desc": "Vulnerability Assessment and Penetration Testing for comprehensive security.",
-      "longDesc": "Our VAPT services combine vulnerability assessment and penetration testing to provide comprehensive security evaluation. We identify and help remediate security weaknesses in your systems.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/VAPT-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/VAPT-Services.jpg"
-    },
-    {
-      "id": "vulnerability-assessment",
-      "title": "Vulnerability Assessment",
-      "desc": "Identify and address vulnerabilities across your IT environment.",
-      "longDesc": "Our Vulnerability Assessment services systematically evaluate your IT environment for security weaknesses. We provide detailed reports and remediation guidance to improve your security posture.",
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Vulnerability-Assessment-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Vulnerability-Assessment-Services.jpg"
+      "id": "social-engineering",
+      "title": "الهندسة الاجتماعية",
+      "desc": "اختبار وعي موظفيك بالأمن السيبراني ومقاومتهم لتقنيات الهندسة الاجتماعية.",
+      "longDesc": "تقوم خدمات الهندسة الاجتماعية لدينا باختبار قدرة موظفيك على التعرف على محاولات الاحتيال والتلاعب والاستجابة لها بشكل مناسب. نقوم بتنفيذ سيناريوهات واقعية مثل التصيد الاحتيالي والمكالمات الهاتفية والوصول المادي لتقييم مستوى الوعي الأمني في مؤسستك وتحديد مجالات التحسين في برامج التوعية الأمنية.",
+      "englishTitle": "Social Engineering",
+      "englishDesc": "Test your employees' cybersecurity awareness and resistance to social engineering techniques.",
+      "englishLongDesc": "Our social engineering services test your employees' ability to recognize and appropriately respond to fraud and manipulation attempts. We implement realistic scenarios such as phishing, phone calls, and physical access to assess the level of security awareness in your organization and identify areas for improvement in security awareness programs.",
+      "detailedDesc": {
+        "ar": [
+          {
+            "title": "نظرة عامة",
+            "content": "الهندسة الاجتماعية هي عملية اختبار تستخدم تقنيات نفسية للتلاعب بالأفراد للكشف عن معلومات سرية أو منح وصول غير مصرح به. تساعد في تقييم مستوى الوعي الأمني لدى الموظفين وتحديد مجالات التحسين في برامج التوعية الأمنية."
+          },
+          {
+            "title": "منهجيتنا",
+            "content": "نتبع منهجية منظمة تتضمن التخطيط وتطوير السيناريوهات وتنفيذ الاختبارات وتحليل النتائج وإعداد التقارير. نصمم سيناريوهات واقعية تحاكي تكتيكات المهاجمين الحقيقيين مع الالتزام بالمعايير الأخلاقية والقانونية."
+          },
+          {
+            "title": "أنواع الاختبارات",
+            "content": "تشمل اختبارات الهندسة الاجتماعية حملات التصيد الاحتيالي والتصيد المستهدف والمكالمات الهاتفية (الخداع الصوتي) والوصول المادي والهندسة الاجتماعية عبر وسائل التواصل الاجتماعي والرسائل النصية (الخداع عبر الرسائل القصيرة)."
+          },
+          {
+            "title": "التقارير والتوصيات",
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وإحصاءات الاستجابة وتوصيات محددة لتحسين برامج التوعية الأمنية. نقدم أيضًا مواد تدريبية مخصصة لمعالجة نقاط الضعف المحددة."
+          },
+          {
+            "title": "الفوائد",
+            "content": "تقييم مستوى الوعي الأمني لدى الموظفين، تحديد نقاط الضعف في العنصر البشري، تحسين برامج التوعية الأمنية، تقليل مخاطر الهجمات القائمة على الهندسة الاجتماعية، تعزيز ثقافة الأمان في المؤسسة."
+          }
+        ],
+        "en": [
+          {
+            "title": "Overview",
+            "content": "Social engineering is a testing process that uses psychological techniques to manipulate individuals into revealing confidential information or granting unauthorized access. It helps assess employees' level of security awareness and identify areas for improvement in security awareness programs."
+          },
+          {
+            "title": "Our Methodology",
+            "content": "We follow a structured methodology that includes planning, scenario development, test execution, results analysis, and reporting. We design realistic scenarios that simulate the tactics of real attackers while adhering to ethical and legal standards."
+          },
+          {
+            "title": "Types of Tests",
+            "content": "Social engineering tests include phishing campaigns, spear phishing, phone calls (vishing), physical access, social media engineering, and text messages (smishing)."
+          },
+          {
+            "title": "Reporting and Recommendations",
+            "content": "We provide detailed reports that include an executive summary, detailed findings, response statistics, and specific recommendations for improving security awareness programs. We also provide customized training materials to address identified weaknesses."
+          },
+          {
+            "title": "Benefits",
+            "content": "Assess employees' level of security awareness, identify weaknesses in the human element, improve security awareness programs, reduce the risk of social engineering-based attacks, enhance security culture within the organization."
+          }
+        ]
+      },
+            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
     }
   ]
 }
