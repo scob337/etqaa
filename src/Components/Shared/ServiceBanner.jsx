@@ -6,7 +6,7 @@ import { MdSecurity } from 'react-icons/md'
 import { useTranslation } from 'react-i18next'
 
 const ServiceBanner = ({ title, backgroundImage }) => {
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
 
   return (
@@ -61,21 +61,21 @@ const ServiceBanner = ({ title, backgroundImage }) => {
         <div className="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-cyber-dark via-cyber-blue/20 to-cyber-dark"></div>
       </div>
 
-      <div dir={isRTL ? "rtl" : "ltr"} className={`relative h-full max-w-7xl mx-auto px-8 flex flex-col justify-center z-40 ${isRTL ? 'items-end text-right' : 'items-start text-left'}`}>
+      <div dir={isRTL ? "rtl" : "ltr"} className={`relative h-full max-w-7xl mx-auto px-8 flex flex-col justify-center z-40 `}>
         {/* Security badge - تم نقلها هنا فوق العنوان */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5 }}
-          className={`absolute ${isRTL ? 'left-8' : 'right-8'} top-10 bg-cyber-secondary/80 px-6 py-3 rounded-cyber border border-cyber-accent/30 shadow-cyber z-50`}
+          className={`absolute ${isRTL ? 'max-md:left-5 left-8' : 'max-md:right-2 right-8'} max-lg:top-7 top-10 bg-cyber-secondary/80 px-3 py-3 rounded-cyber border border-cyber-accent/30 shadow-cyber z-50`}
         >
-          <div className={`flex items-center ${isRTL ? 'flex-row-reverse' : ''}`}>
+          <div className={`flex items-center `}>
             <div className={`w-3 h-3 rounded-full bg-cyber-accent animate-pulse ${isRTL ? 'ml-3' : 'mr-3'}`}></div>
             <span className="text-cyber-accent text-sm font-medium">
               {isRTL ? 'حماية متقدمة' : 'Advanced Protection'}
             </span>
           </div>
-        </motion.div> */}
+        </motion.div> 
         
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -85,7 +85,9 @@ const ServiceBanner = ({ title, backgroundImage }) => {
         >
           <Link
             to="/services"
-            className={`inline-flex ${isRTL? "flex-row-reverse" : "flex-row"} gap-5 items-center text-white hover:text-cyber-accent transition-all duration-300 bg-cyber-primary/50 px-6 py-3 rounded-cyber border border-cyber-accent/20 shadow-cyber hover:shadow-cyber-hover hover:border-cyber-accent/50 ${isRTL ? 'mr-auto' : 'ml-auto'}`}
+            className={`inline-flex ${isRTL? "flex-row-reverse" : "flex-row"} gap-5 items-center
+              hover:text-[var(--cyber-accent)]
+              text-white  transition-all duration-300 bg-cyber-primary/50 px-6 py-3 rounded-cyber border border-cyber-accent/20 shadow-cyber hover:shadow-cyber-hover hover:border-cyber-accent/50 ${isRTL ? 'mr-auto' : 'ml-auto'}`}
           >
             {isRTL ? <FaArrowRight className="ml-3" /> : < FaArrowLeft className="mr-3" />}
             <span className="font-medium">{(isRTL ? 'العودة إلى الخدمات' : 'Back to Services')}</span>

@@ -1,31 +1,23 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const ScopeWork = () => {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const containerRef = useRef(null);
   const imageRef = useRef(null);
   const contentRef = useRef(null);
   const listRef = useRef(null);
-  
+
   const isSectionInView = useInView(sectionRef, { once: true, amount: 0.1 });
   const isContainerInView = useInView(containerRef, { once: true, amount: 0.2 });
   const isImageInView = useInView(imageRef, { once: true, amount: 0.3 });
   const isContentInView = useInView(contentRef, { once: true, amount: 0.3 });
   const isListInView = useInView(listRef, { once: true, amount: 0.2 });
 
-  const scopeItems = [
-    "Comprehensive Security Assessment and Vulnerability Management",
-    "Advanced Threat Detection and Incident Response",
-    "Cloud Security Architecture and Implementation",
-    "Identity and Access Management Solutions",
-    "Security Information and Event Management (SIEM)",
-    "Network Security and Firewall Configuration",
-    "Data Protection and Encryption Services",
-    "Security Awareness Training and Compliance",
-    "24/7 Security Operations Center (SOC) Services",
-    "Penetration Testing and Red Team Operations"
-  ];
+  const scopeItems = t('Scop.items', { returnObjects: true });
 
   return (
     <motion.div 
@@ -65,7 +57,7 @@ const ScopeWork = () => {
           className="p-6 md:p-8"
         >
           <h1 className="text-[40px] md:text-[50px] font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-6">
-            Our Scope of Services
+            {t('Scop.title')}
           </h1>
           <motion.ul 
             ref={listRef}

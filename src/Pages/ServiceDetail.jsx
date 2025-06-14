@@ -180,7 +180,9 @@ const ServiceDetail = () => {
                 key={relatedService.id}
                 initial={{ opacity: 0, x: index === 0 ? -20 : 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                className={`bg-cyber-secondary rounded-cyber p-6 border border-cyber-gray-dark hover:border-cyber-accent transition-all duration-300 shadow-cyber ${isRTL ? 'text-right' : 'text-left'}`}
+                className={`bg-cyber-secondary rounded-cyber p-6 
+                  
+                  border border-cyber-gray-dark hover:border-cyber-accent transition-all duration-300 shadow-cyber ${isRTL ? 'text-right' : 'text-left'}`}
                 whileHover={{ scale: 1.02, boxShadow: "0 8px 32px 0 rgba(0, 255, 255, 0.15)" }}
               >
                 <h3 className="text-xl font-bold text-white mb-3">
@@ -191,10 +193,10 @@ const ServiceDetail = () => {
                 </p>
                 <Link
                   to={`/services/${relatedService.id}`}
-                  className={`inline-flex items-center text-cyber-accent hover:text-cyber-green transition-colors ${isRTL ? 'flex-row-reverse' : ''} mt-2 bg-cyber-dark/50 px-4 py-2 rounded-cyber border border-cyber-accent/20 hover:border-cyber-accent/50 shadow-cyber hover:shadow-cyber-hover`}
+                  className={`inline-flex ${isRTL? "":"flex-row-reverse"} items-center text-cyber-accent hover:text-cyber-green transition-colors ${isRTL ? 'flex-row-reverse' : ''} mt-2 bg-cyber-dark/50 px-4 py-2 rounded-cyber border border-cyber-accent/20 hover:border-cyber-accent/50 shadow-cyber hover:shadow-cyber-hover`}
                 >
-                  <span>{t('services.learnMore') || (isRTL ? 'اقرأ المزيد' : 'Learn More')}</span>
                   {isRTL ? <FaArrowLeft className="mr-2" /> : <FaArrowRight className="ml-2" />}
+                  <span>{t('services.learnMore') || (isRTL ? 'اقرأ المزيد' : 'Learn More')}</span>
                 </Link>
               </motion.div>
             ))}

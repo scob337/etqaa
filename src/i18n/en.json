@@ -101,6 +101,21 @@
     }
   }
 ,
+"Scop": {
+  "title": "Our Scope of Services",
+  "items": [
+    "Comprehensive Security Assessment and Vulnerability Management",
+    "Advanced Threat Detection and Incident Response",
+    "Cloud Security Architecture and Implementation",
+    "Identity and Access Management Solutions",
+    "Security Information and Event Management (SIEM)",
+    "Network Security and Firewall Configuration",
+    "Data Protection and Encryption Services",
+    "Security Awareness Training and Compliance",
+    "24/7 Security Operations Center (SOC) Services",
+    "Penetration Testing and Red Team Operations"
+  ]
+},
   "contact": {
     "title": "Contact Us",
     "subtitle": "We're here to answer your questions and help bring your vision to life",
@@ -123,7 +138,7 @@
       "title": "Contact Information",
       "address": {
         "label": "Address",
-        "value": "Riyadh, Saudi Arabia"
+        "value": "Ibn Kathir Street, Al-Sulaimaniah, Riyadh 12234, Kingdom of Saudi Arabia"
       },
       "phone": {
         "label": "Phone",

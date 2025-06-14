@@ -188,12 +188,6 @@ const Footer = () => {
                 {link.label}
               </Link>
             ))}
-            <Link 
-              to="/privacy-policy"
-              className="text-gray-400 hover:text-cyber-accent transition-colors hover:underline underline-offset-4 decoration-cyber-accent/30"
-            >
-              {t('footer.privacy_policy') || (isRTL ? 'سياسة الخصوصية' : 'Privacy Policy')}
-            </Link>
           </div>
         </div>
       </div>
