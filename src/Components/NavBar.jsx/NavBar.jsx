@@ -4,29 +4,31 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaShieldAlt, FaLock } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
-
+import ServicesList from '../../data/services.json'
 // Replace the navLinks array with:
-const getNavLinks = (t) => [
-  { label: t('nav.home'), href: "/" },
-  {
-    label: t('nav.services'), 
-    href: "/services",
-    dropdown: [
-      { label: t('services.items.penetration-testing.title'), href: "/services/penetration-testing" },
-      { label: t('services.items.vulnerability-assessment.title'), href: "/services/vulnerability-assessment" },
-      { label: t('services.items.grc-service.title'), href: "/services/grc-service" },
-      { label: t('services.items.configuration-review.title'), href: "/services/configuration-review" },
-    ],
-  },
-  { label: t('nav.about'), href: "/about" },
-  { label: t('nav.partners'), href: "/partners" },
-  { label: t('nav.contact'), href: "/contact" },
-];
+
 
 export default function NavBar() {
   const { t, i18n } = useTranslation();
-  const navLinks = getNavLinks(t);
   const isRTL = i18n.language === 'ar';
+    const getNavLinks = (t) => [
+
+    { label: t('nav.home'), href: "/" },
+    {
+      label: t('nav.services'), 
+      href: "/services",
+      dropdown: ServicesList.services.map(service => ({
+        label: isRTL ? service.title : service.englishTitle,
+        href: `/services/${service.id}`
+      }))
+      
+    },
+    { label: t('nav.partners'), href: "/partners" },
+    { label: t('nav.about'), href: "/about" },
+    { label: t('nav.contact'), href: "/contact" },
+  ];
+
+  const navLinks = getNavLinks(t);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const navigate = useNavigate();
@@ -87,7 +89,7 @@ export default function NavBar() {
                       <Link
                         to={item.href}
                         key={item.label}
-                        className="block px-4 py-2.5 text-gray-300 hover:text-cyber-accent
+                        className="block px-4 py-1 text-gray-300 hover:text-cyber-accent
                         hover:border-l-1 hover:border-[var(--cyber-green)] transition-all duration-200 relative group"
                       >
                         {item.label}
@@ -187,7 +189,7 @@ export default function NavBar() {
                   </span>
                 </button>
                 <div
-                  className={`overflow-hidden transition-all duration-500 ${
+                  className={`overflow-y-auto transition-all duration-500 ${
                     openDropdown === idx ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
                   }`}
                 >

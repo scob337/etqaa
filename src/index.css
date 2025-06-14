@@ -2,7 +2,7 @@
 
 :root {
   /* الألوان الأساسية */
-  --main-bg: #061224;
+  --main-bg: ##00CCCC;
   --main-text: #fff;
   
   /* ألوان cyber */
@@ -110,4 +110,27 @@
   .rounded-cyber { 
     border-radius: var(--rounded-cyber);
   }
+}
+
+
+/* Scrollbar عام */
+::-webkit-scrollbar {
+  width: 8px; /* العرض */
+  height: 8px; /* للطول الأفقي */
+}
+
+/* الجزء الخلفي للسكرول */
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* لون الخلفية */
+}
+
+/* المقبض */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, var(--gradient-green-start), var(--gradient-green-end));
+  border-radius: 4px;
+}
+
+/* المقبض عند الهوفر */
+::-webkit-scrollbar-thumb:hover {
+  background: #0097a7;
 }
