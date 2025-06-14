@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { FaCheckCircle, FaInfoCircle, FaShieldAlt, FaLock, FaServer, FaUserShield, FaArrowRight, FaArrowLeft, FaPhoneAlt } from 'react-icons/fa'
 import { MdSecurity, MdOutlinePrivacyTip } from 'react-icons/md'
 import { BiTargetLock } from 'react-icons/bi'
-import ServiceBanner from '../Components/Shared/ServiceBanner'
 import servicesData from '../data/services.json'
+import { Helmet } from 'react-helmet'
+import ServiceBanner from '../Components/Shared/ServiceBanner'
 
 const ServiceDetail = () => {
   const { id } = useParams()
+  const location = useLocation()
+  const currentPath = location.pathname
   const [service, setService] = useState(null)
   const [randomServices, setRandomServices] = useState([])
   const { t, i18n } = useTranslation()
@@ -19,15 +22,17 @@ const ServiceDetail = () => {
     const currentService = servicesData.services.find(s => s.id === id)
     setService(currentService)
 
-    // Get 2 random services excluding current one
     const otherServices = servicesData.services.filter(s => s.id !== id)
     const shuffled = [...otherServices].sort(() => 0.5 - Math.random())
     setRandomServices(shuffled.slice(0, 2))
-  }, [id])
+
+    if (currentService) {
+      document.title = `${currentService.englishTitle} - ETQAA`
+    }
+  }, [id, currentPath])
 
   if (!service) return null
 
-  // Digital circuit background pattern for cyber security theme
   const DigitalCircuitPattern = () => (
     <div className="absolute inset-0 overflow-hidden opacity-5 pointer-events-none">
       <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +54,6 @@ const ServiceDetail = () => {
     </div>
   );
 
-  // Get appropriate icon for the service
   const getServiceIcon = (serviceId) => {
     const iconMap = {
       'penetration-testing': <BiTargetLock className="text-3xl text-cyber-accent" />,
@@ -59,16 +63,26 @@ const ServiceDetail = () => {
       'secure-code-review': <MdSecurity className="text-3xl text-cyber-accent" />,
       'red-team': <FaUserShield className="text-3xl text-cyber-accent" />,
       'social-engineering': <MdOutlinePrivacyTip className="text-3xl text-cyber-accent" />
-    };
-    
-    return iconMap[serviceId] || <FaShieldAlt className="text-3xl text-cyber-accent" />;
-  };
+    }
+
+    return iconMap[serviceId] || <FaShieldAlt className="text-3xl text-cyber-accent" />
+  }
 
   return (
-    <div className="bg-cyber-primary min-h-screen relative overflow-hidden">
-      <ServiceBanner 
-        title={isRTL ? service.title : service.englishTitle} 
-        backgroundImage={service.bannerImg} 
+    <div className="bg-cyber-primary min-h-screen relative overflow-hidden text-cyber-gray-dark">
+      <Helmet>
+        <meta name="description" content={isRTL ? service.desc : service.englishDesc} />
+        <meta name="keywords" content={`${isRTL ? service.title : service.englishTitle}, cybersecurity, penetration testing, security assessment, ETQAA, Saudi Arabia, ${isRTL ? 'أمن سيبراني, اختبار اختراق, تقييم أمني, إتقاء, المملكة العربية السعودية' : ''}`} />
+        <link rel="canonical" href={`https://etqaa.com/services/${id}`} />
+        <meta property="og:title" content={`${isRTL ? service.title : service.englishTitle} - ETQAA`} />
+        <meta property="og:description" content={isRTL ? service.desc : service.englishDesc} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://etqaa.com/services/${id}`} />
+      </Helmet>
+
+      <ServiceBanner
+        title={isRTL ? service.title : service.englishTitle}
+        backgroundImage={service.bannerImg}
       />
       
       <DigitalCircuitPattern />
@@ -248,3 +262,4 @@ const ServiceDetail = () => {
 }
 
 export default ServiceDetail
+

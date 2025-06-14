@@ -6,11 +6,7 @@ import { RiGovernmentFill } from 'react-icons/ri'
 import { BiSolidBrain } from 'react-icons/bi'
 import { useTranslation } from 'react-i18next'
 
-const fadeIn = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
-}
+
 
 const About = () => {
   const { t, i18n } = useTranslation();

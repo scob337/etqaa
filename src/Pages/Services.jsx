@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import ServicesData from '../Components/ServicesData'
+import { Helmet } from 'react-helmet'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -21,6 +22,15 @@ const Services = () => {
 
   return (
     <div  className="bg-cyber-primary min-h-screen">
+      <Helmet>
+        <title>{isRTL ? 'خدماتنا - إتقاء للأمن السيبراني' : 'Our Services - ETQAA Cybersecurity'}</title>
+        <meta 
+          name="description" 
+          content={isRTL ? 'حلول أمنية شاملة لحماية أصولك الرقمية وضمان استمرارية الأعمال من إتقاء للأمن السيبراني' : 'Comprehensive security solutions to protect your digital assets and ensure business continuity from ETQAA Cybersecurity'} 
+        />
+        <meta name="keywords" content="cybersecurity services, penetration testing, vulnerability assessment, security consulting, ETQAA, Saudi Arabia" />
+        <link rel="canonical" href="https://etqaa.com/services" />
+      </Helmet>
       {/* Banner Section */}
       <div className="relative h-[50vh] overflow-hidden">
         <div

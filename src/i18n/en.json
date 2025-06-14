@@ -75,29 +75,43 @@
   }
 ,
   "about": {
-    "title": "About ETQAA",
-    "subtitle": "A leading Saudi cybersecurity firm dedicated to providing high-quality services to government entities and businesses.",
-    "intro": "We specialize in delivering tailored solutions that protect sensitive data and uphold national interests in today's digital age. Our expert team leverages cutting-edge technologies to ensure client security, covering threat detection, risk management, and compliance.",
+    "title": "About Etqaa",
+    "subtitle": "A leading Saudi cybersecurity company specializing in providing integrated solutions to protect the digital infrastructure of organizations and government entities",
+    "intro": "We specialize in providing comprehensive cybersecurity solutions to protect sensitive data and digital assets in today's digital age. Our team of certified experts uses the latest technologies and global methodologies to ensure client security, including advanced threat detection, risk management, and compliance with national and international standards.",
     "mission": {
       "title": "Our Mission",
-      "content": "In an increasingly complex digital landscape, ETQAA's mission is to enhance organizational resilience and secure critical assets against evolving cyber threats. We take a holistic approach, integrating governance, risk, and compliance (GRC) frameworks, security assessments, and operational support to safeguard our clients' digital frontiers."
+      "content": "In an increasingly complex digital landscape and evolving cyber threats, Etqaa's mission is to enhance organizational resilience and secure vital assets against advanced cyber attacks. We follow a comprehensive approach, integrating governance, risk and compliance frameworks, advanced security assessments, and continuous operational support to protect our clients' digital boundaries."
     },
     "vision": {
       "title": "Our Vision",
-      "content": "At ETQAA, we strive to be the trusted partner for cybersecurity in Saudi Arabia, protecting organizations across sectors through innovative solutions, expert insights, and a commitment to excellence."
+      "content": "At Etqaa, we strive to be the trusted cybersecurity partner in the Kingdom of Saudi Arabia, protecting organizations across various sectors through innovative solutions, expert insights, and commitment to excellence and leadership in cybersecurity."
     },
     "services": {
-      "title": "Our Services and Expertise",
-      "grc": "GRC and Architecture",
-      "enterprise": "Enterprise Architecture",
-      "security": "Security Assessment",
-      "soc": "SOC Services"
+      "title": "Our Services & Expertise",
+      "description": "We offer a comprehensive range of cybersecurity services tailored to meet the needs of different organizations and protect them from sophisticated threats.",
+      "penetrationTesting": "Penetration Testing",
+      "vulnerabilityAssessment": "Vulnerability Assessment",
+      "icsScada": "ICS/SCADA Security",
+      "configReview": "Security Configuration Review",
+      "codeReview": "Secure Code Review",
+      "redTeam": "Red Team Operations",
+      "cloudSecurity": "Cloud Security",
+      "identityAccess": "Identity & Access Management",
+      "networkSecurity": "Network Security",
+      "grc": "Governance, Risk & Compliance",
+      "enterprise": "Enterprise Security Architecture",
+      "security": "Comprehensive Security Assessment",
+      "soc": "Security Operations Center Services"
     },
     "stats": {
+      "satisfactionRate": "Client Satisfaction Rate",
+      "projectsCompleted": "Projects Completed",
+      "support": "Continuous Support",
+      "certifiedExperts": "Certified Experts",
       "team": "Expert Team",
-      "partners": "Trusted Partners",
-      "certifications": "Certifications",
-      "innovation": "Innovation"
+      "partners": "Strategic Partners",
+      "certifications": "Certified Credentials",
+      "innovation": "Continuous Innovation"
     }
   }
 ,

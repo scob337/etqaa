@@ -26,7 +26,7 @@
                 variants={cardVariants}
                 className="group"
               >
-                <div className="bg-cyber-secondary rounded-2xl overflow-hidden border border-cyber-gray-dark hover:shadow-cyber-hover hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
+                <div className="bg-cyber-secondary rounded-2xl overflow-hidden border border-[var(--cyber-accent)] hover:shadow-cyber-hover hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
                   <div className="h-64 overflow-hidden relative">
                     <img
                       src={service.img}
@@ -51,7 +51,7 @@
   to={`/services/${service.id}`}
   className={`inline-flex items-center justify-between px-6 py-3  text-white rounded-cyber
     shadow-cyber
-border border-[var(--cyber-accent-dark)] bg-[var(--cyber-primary)] hover:text-white transition-all duration-300 group/btn ${isRTL ? 'flex-row-reverse' : ''}`}
+border border-[var(--cyber-accent)] bg-[var(--cyber-primary)] hover:text-white transition-all duration-300 group/btn ${isRTL ? 'flex-row-reverse' : ''}`}
 >
   {isRTL ? (
     <>
