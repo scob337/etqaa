@@ -42,11 +42,16 @@ const ScopeWork = () => {
           className="relative p-2.5 md:w-2/5 shrink-0 overflow-hidden group"
         >
           <img
-            src="https://securitypact.net/wp-content/uploads/2024/09/Identity-and-Access-Management-IAM-Solution.jpg"
-            alt="Cybersecurity Operations"
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+            alt="Cybersecurity Problem Solving Process"
             className="h-full w-full rounded-md md:rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-cyber-primary via-transparent to-transparent opacity-40"></div>
+          
+          {/* إضافة شارة توضيحية */}
+          <div className="absolute top-4 right-4 bg-cyber-accent/80 px-3 py-1 rounded-full text-xs font-bold text-cyber-dark">
+            {t('Scop.badge')}
+          </div>
         </motion.div>
 
         <motion.div 

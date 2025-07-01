@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import ServicesData from './../ServicesData';
-
 const containerVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -44,6 +43,7 @@ const ServicesComp = () => {
         >
 <ServicesData/>
         </motion.div>
+
       </motion.div>
     </section>
   )

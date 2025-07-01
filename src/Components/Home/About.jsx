@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { FaShieldAlt, FaUserShield, FaLock, FaAward } from 'react-icons/fa';
 import { MdSecurity } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-
+import C from '/syb-heading.jpg'
 const About = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
@@ -169,7 +169,9 @@ const About = () => {
             viewport={{ once: true, amount: 0.3 }}
           />
         </div>
-        
+                <motion.div className="mt-3  ">
+          <img src={C} alt="" className="rounded-2xl" />
+          </motion.div>
         {/* Achievements Section */}
         <motion.div 
           className="xl:w-[80%] sm:w-[85%] w-[90%] mx-auto mt-16"
@@ -234,6 +236,7 @@ const About = () => {
             <Link to="/contact">{isRTL ? 'تواصل معنا' : 'Contact Us'}</Link>
           </motion.button>
         </motion.div>
+
       </div>
     </section>
   )

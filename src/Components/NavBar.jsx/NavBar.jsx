@@ -116,7 +116,7 @@ export default function NavBar() {
 
           {/* Mobile menu button with animated hamburger */}
           <button
-            className="md:hidden p-2 text-gray-300 hover:text-cyber-accent rounded-lg hover:bg-cyber-secondary transition-colors duration-200 relative z-50"
+            className="md:hidden p-2 text-gray-300 cursor-pointer hover:text-cyber-accent rounded-lg hover:bg-cyber-secondary transition-colors duration-200 relative z-50"
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-expanded={mobileOpen}
           >

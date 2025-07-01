@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
   return (
     <motion.button
       onClick={toggleLanguage}
-      className="fixed bottom-5 right-5 bg-cyber-primary border border-cyber-accent/40 text-white hover:text-cyber-accent px-4 py-2 rounded-cyber shadow-cyber hover:shadow-cyber-hover hover:border-cyber-accent/70 transition-all duration-300 z-50 flex items-center gap-2"
+      className="fixed bottom-5 left-5 cursor-pointer bg-cyber-primary border border-cyber-accent/40 text-white hover:text-cyber-accent px-4 py-2 rounded-cyber shadow-cyber hover:shadow-cyber-hover hover:border-cyber-accent/70 transition-all duration-300 z-50 flex items-center gap-2"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0, y: 20 }}

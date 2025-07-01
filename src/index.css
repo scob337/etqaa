@@ -1,5 +1,11 @@
 @import "tailwindcss";
-
+body{
+  cursor:url('/cursor.cur') , auto
+}
+::selection {
+  background-color: var(--cyber-green);
+  color: black;
+}
 :root {
   /* الألوان الأساسية */
   --main-bg: #00CCCC;

@@ -24,7 +24,7 @@
           },
           {
             "title": "التقارير والتوصيات",
-            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف نقاط الضعف حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة مع مراعاة متطلبات البيئات التشغيلية."
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف نقاط الضعف حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة مع مراعاة البيئات التشغيلية."
           },
           {
             "title": "الفوائد",
@@ -61,7 +61,7 @@
       "id": "vulnerability-assessment",
       "title": "تحليل شامل لتحديد نقاط الضعف في الأنظمة.",
       "desc": "تحديد ومعالجة نقاط الضعف في بيئة تكنولوجيا المعلومات الخاصة بك.",
-      "longDesc": "تقوم خدمات تقييم الثغرات الأمنية لدينا بتقييم بيئة تكنولوجيا المعلومات الخاصة بك بشكل منهجي للكشف عن نقاط الضعف الأمنية. نقدم تقارير مفصلة وإرشادات للمعالجة لتحسين وضعك الأمني وتقليل المخاطر المحتملة على بنيتك التحتية التكنولوجية.",
+      "longDesc": "تقوم خدمات تقييم الثغرات الأمنية لدينا بتقييم بيئة تكنولوجيا المعلومات الخاصة بك بشكل منهجية للكشف عن نقاط الضعف الأمنية. نقدم تقارير مفصلة وإرشادات للمعالجة لتحسين وضعك الأمني وتقليل المخاطر المحتملة على بنيتك التحتية التكنولوجية.",
       "englishTitle": "Vulnerability Assessment",
       "englishDesc": "Identify and address vulnerabilities in your IT environment.",
       "englishLongDesc": "Our vulnerability assessment services systematically evaluate your IT environment to detect security vulnerabilities. We provide detailed reports and remediation guidance to improve your security posture and reduce potential risks to your technology infrastructure.",
@@ -111,13 +111,13 @@
           }
         ]
       },
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"},
+      "img": "https://securitypact.net/wp-content/uploads/2024/11/Vulnerability-Assessment.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Vulnerability-Assessment.jpg"},
     {
       "id": "risk-assessment",
       "title": " تقييم دقيق للمخاطر الأمنية وتأثيرها على الأعمال.",
       "desc": "تحديد وتقييم وتخفيف المخاطر التي تهدد أعمالك.",
-      "longDesc": "تساعد خدمات تقييم المخاطر لدينا المؤسسات على تحديد وتقييم المخاطر الأمنية التي تهدد أعمالها. نقدم تحليلاً مفصلاً وتوصيات لاستراتيجيات تخفيف المخاطر، مما يمكنك من اتخاذ قرارات مستنيرة لحماية أصولك القيمة وضمان استمرارية الأعمال.",
+      "longDesc": "تساعد خدمات تقييم المخاطر لدينا المؤسسات على تحديد وتقييم المخاطر الأمنية التي تهدد أعمالها. نقدم تحليزاً مفصلاً وتوصيات لاستراتيجيات تخفيف المخاطر، مما يمكنك من اتخاذ قرارات مستنيرة لحماية أصولك القيمة وضمان استمرارية الأعمال.",
       "englishTitle": "Risk Assessment",
       "englishDesc": "Identify, evaluate, and mitigate risks threatening your business.",
       "englishLongDesc": "Our risk assessment services help organizations identify and evaluate security risks threatening their business. We provide detailed analysis and recommendations for risk mitigation strategies, enabling you to make informed decisions to protect your valuable assets and ensure business continuity.",
@@ -137,7 +137,7 @@
           },
           {
             "title": "التقارير والتوصيات",
-            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا وتحليلًا للمخاطر وتوصيات محددة لاستراتيجيات التخفيف. نصنف المخاطر حسب مستوى الخطورة ونقدم إرشادات عملية لإدارة المخاطر."
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا وتحليزات للمخاطر وتوصيات محددة لاستراتيجيات التخفيف. نصنف المخاطر حسب مستوى الخطورة ونقدم إرشادات عملية لإدارة المخاطر."
           },
           {
             "title": "الفوائد",
@@ -167,8 +167,8 @@
           }
         ]
       },
-           "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+           "img": "https://securitypact.net/wp-content/uploads/2024/11/Risk-Assessment.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Risk-Assessment.jpg"
     },
     {
       "id": "grc-service",
@@ -224,8 +224,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+            "img": "https://securitypact.net/wp-content/uploads/2024/11/GDPR-Compliance-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/GDPR-Compliance-Services.jpg"
     },
     {
       "id": "ics-scada-testing",
@@ -251,7 +251,7 @@
           },
           {
             "title": "التقارير والتوصيات",
-            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف نقاط الضعف حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة مع مراعاة متطلبات البيئات التشغيلية."
+            "content": "نقدم تقارير مفصلة تتضمن ملخصًا تنفيذيًا ونتائج تفصيلية وتوصيات محددة للإصلاح. نصنف نقاط الضعف حسب مستوى الخطورة ونقدم إرشادات عملية للمعالجة مع مراعاة البيئات التشغيلية."
           },
           {
             "title": "الفوائد",
@@ -273,7 +273,7 @@
           },
           {
             "title": "Reporting and Recommendations",
-            "content": "We provide detailed reports that include an executive summary, detailed findings, and specific remediation recommendations. We classify vulnerabilities by severity level and provide practical guidance for remediation that considers operational environment requirements."
+            "content": "We provide detailed reports that include an executive summary, detailed findings, and specific remediation recommendations. We classify vulnerabilities by severity level and provide secure code examples to assist with remediation."
           },
           {
             "title": "Benefits",
@@ -281,8 +281,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+            "img": "https://securitypact.net/wp-content/uploads/2024/11/Penetration-Testing-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Penetration-Testing-Services.jpg"
     },
     {
       "id": "configuration-review",
@@ -312,7 +312,7 @@
           },
           {
             "title": "الفوائد",
-            "content": "تحديد وتصحيح الأخطاء في التكوين، تقليل مساحة الهجوم، تحسين الوضع الأمني العام، الامتثال للمعايير الصناعية، تعزيز أداء وكفاءة الأنظمة."
+            "content": "تحديد وتصحيح الأخطاء في التكوين، تقليل مساحة الهجوم، تحسين الوضع الأمني العام، الامتثال للمتطلبات التنظيمية، حماية سمعة المؤسسة."
           }
         ],
         "en": [
@@ -338,8 +338,8 @@
           }
         ]
       },
-           "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+           "img": "https://securitypact.net/wp-content/uploads/2024/11/Application-Security-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Application-Security-Services.jpg"
     },
     {
       "id": "secure-code-review",
@@ -395,8 +395,8 @@
           }
         ]
       },
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Application-Security-Services.jpg"
+      "img": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg"
     },
     {
       "id": "red-teaming",
@@ -452,8 +452,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+            "img": "https://securitypact.net/wp-content/uploads/2024/11/Red-Teaming.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Red-Teaming.jpg"
     },
     {
       "id": "social-engineering",
@@ -509,8 +509,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+            "img": "https://securitypact.net/wp-content/uploads/2024/11/SOAR-Services.jpg",
+      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/SOAR-Services.jpg"
     }
   ]
 }

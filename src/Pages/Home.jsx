@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 
 const Home = () => {
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
 
   return (
@@ -25,6 +25,7 @@ const Home = () => {
       <HeroSection/>
       <About/>
       <ServicesComp/>
+      
       <WhyUs/>
       <ScopeWork/>
       <EndSection />
