@@ -150,7 +150,7 @@ const Partners = () => {
           className="mb-12"
         >
           <div className={`flex flex-wrap gap-3 justify-center ${isRTL ? 'flex-row-reverse' : ''}`}>
-            {partnersData.categories.map((category) => (
+            {partnersData.categories?.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
@@ -185,7 +185,7 @@ const Partners = () => {
               <motion.div
                 key={partner.id}
                 variants={itemVariants}
-                className="bg-cyber-primary border border-cyber-gray-dark hover:border-cyber-accent/50 rounded-lg p-6 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-cyber group"
+                className="bg-gray-500 border border-cyber-gray-dark hover:border-cyber-accent/50 rounded-lg p-6 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-cyber group"
               >
                 <div className="h-24 flex items-center justify-center mb-4 w-full">
                   <img 
@@ -197,9 +197,7 @@ const Partners = () => {
                 <h3 className="text-xl font-medium text-white mb-2 text-center">
                   {isRTL ? partner.nameAr : partner.name}
                 </h3>
-                <span className="text-sm px-3 py-1 rounded-full bg-cyber-secondary text-cyber-accent border border-cyber-accent/20">
-                  {t(`partners.categories.${partner.category}`)}
-                </span>
+
               </motion.div>
             ))}
           </motion.div>

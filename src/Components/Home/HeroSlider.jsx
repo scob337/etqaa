@@ -2,13 +2,12 @@ import React from "react";
 
 const SliderMarquee = () => {
   const images = [
-    "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D",
-    "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D",
+   '/partners/al-jammaz.jpg',
+'/partners/cyber-shield.png',
+'/partners/DSTC.png',
+  '/partners/ras.png',
+  '/partners/star-link.png',
+  '/partners/tenable.png'
   ];
 
   // Duplicate images for seamless infinite scroll
@@ -16,9 +15,9 @@ const SliderMarquee = () => {
 
   return (
     <div className="flex overflow-hidden w-[90%] md:w-[80%] lg:w-[80%] py-4 ">
-      <div className="relative w-full">
+      <div className="relative w-full bg-white">
         <div
-          className="flex animate-marquee"
+          className="flex animate-marquee "
           style={{
             animation: "marquee 20s linear infinite",
           }}
@@ -31,9 +30,9 @@ const SliderMarquee = () => {
               className={`
                 rounded object-cover
                 w-[90px] h-[45px]
-                sm:w-[120px] sm:h-[60px]
-                md:w-[150px] md:h-[75px]
-                lg:w-[170px] lg:h-[85px]
+                sm:w-[140px] sm:h-[70px]
+                md:w-[160px] md:h-[80px]
+                lg:w-[180px] lg:h-[90px]
                 xl:w-[200px] xl:h-[100px]
                 mx-2
               `}

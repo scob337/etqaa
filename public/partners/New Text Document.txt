@@ -1,0 +1,32 @@
+
+
+
+'/partners/ami-viz.png',
+
+'/partners/bulwark.png',
+
+'/partners/cyber-cyte.png',
+
+'/partners/cyber-shield.png',
+
+'/partners/DSTC.png',
+
+'/partners/fortra.png',
+
+'/partners/phosphorus.png',
+
+'/partners/qualys.png',
+
+'/partners/ras.png',
+
+'/partners/star-link.png',
+
+
+    {
+      "id": al-jammaz
+      "name": "Al-Jammaz Technologies",
+      "nameAr": "الجماز للتكنولوجيا",
+      "logo":'/partners/al-jammaz.jpg',
+      "category": "technology",
+      "categoryAr": "تكنولوجيا"
+    },

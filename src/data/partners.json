@@ -1,132 +1,72 @@
 {
   "partners": [
     {
-      "id": "microsoft",
-      "name": "Microsoft",
-      "nameAr": "مايكروسوفت",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png",
-      "category": "technology",
-      "categoryAr": "تكنولوجيا"
+      "id": "al-jammaz",
+      "name": "Al-Jammaz Technologies",
+      "nameAr": "الجماز للتكنولوجيا",
+      "logo":"/partners/al-jammaz.jpg"
     },
-    {
-      "id": "cisco",
-      "name": "Cisco",
-      "nameAr": "سيسكو",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/512px-Cisco_logo_blue_2016.svg.png",
-      "category": "network",
-      "categoryAr": "شبكات"
+       {
+      "id": "ami-viz",
+      "name": "Ami Viz  Enterprise marketplace",
+      "nameAr": "Ami Viz",
+      "logo":"/partners/ami-viz.png"
     },
-    {
-      "id": "ibm",
-      "name": "IBM",
-      "nameAr": "آي بي إم",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/512px-IBM_logo.svg.png",
-      "category": "technology",
-      "categoryAr": "تكنولوجيا"
+       {
+      "id": "bulwark",
+      "name": "BULWARK",
+      "nameAr": "BULWARK",
+      "logo":"/partners/bulwark.png"
     },
-    {
-      "id": "symantec",
-      "name": "Symantec",
-      "nameAr": "سيمانتك",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Symantec_logo10.svg/512px-Symantec_logo10.svg.png",
-      "category": "security",
-      "categoryAr": "أمان"
+
+
+           {
+      "id": "cyber-cyte",
+      "name": "CYBER CYTE",
+      "nameAr": "CYBER CYTE",
+      "logo":"/partners/cyber-cyte.png"
     },
-    {
-      "id": "paloalto",
-      "name": "Palo Alto Networks",
-      "nameAr": "بالو ألتو نتووركس",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Palo_Alto_Networks_logo.svg/512px-Palo_Alto_Networks_logo.svg.png",
-      "category": "security",
-      "categoryAr": "أمان"
+           {
+      "id": "cyber-shield",
+      "name": "Cyber Shield",
+      "nameAr": "CYBER Shield",
+      "logo":"/partners/cyber-shield.png"
     },
-    {
-      "id": "fortinet",
-      "name": "Fortinet",
-      "nameAr": "فورتينت",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Fortinet_logo.svg/512px-Fortinet_logo.svg.png",
-      "category": "security",
-      "categoryAr": "أمان"
+           {
+      "id": "DSTC",
+      "name": "DSTC",
+      "nameAr": "DSTC",
+      "logo":"/partners/DSTC.png"
     },
-    {
-      "id": "checkpoint",
-      "name": "Check Point",
-      "nameAr": "تشيك بوينت",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Check_Point_Software_Technologies_logo.svg/512px-Check_Point_Software_Technologies_logo.svg.png",
-      "category": "security",
-      "categoryAr": "أمان"
+           {
+      "id": "fortra",
+      "name": "Fortra",
+      "nameAr": "Fortra",
+      "logo":"/partners/fortra.png"
     },
-    {
-      "id": "oracle",
-      "name": "Oracle",
-      "nameAr": "أوراكل",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/512px-Oracle_logo.svg.png",
-      "category": "database",
-      "categoryAr": "قواعد بيانات"
+           {
+      "id": "phosphorus",
+      "name": "Phosphorus",
+      "nameAr": "Phosphorus",
+      "logo":"/partners/phosphorus.png"
     },
-    {
-      "id": "aws",
-      "name": "Amazon Web Services",
-      "nameAr": "أمازون ويب سيرفيسز",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png",
-      "category": "cloud",
-      "categoryAr": "سحابة"
+           {
+      "id": "qualys",
+      "name": "Qualys",
+      "nameAr": "Qualys",
+      "logo":"/partners/qualys.png"
     },
-    {
-      "id": "azure",
-      "name": "Microsoft Azure",
-      "nameAr": "مايكروسوفت أزور",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Microsoft_Azure_Logo.svg/512px-Microsoft_Azure_Logo.svg.png",
-      "category": "cloud",
-      "categoryAr": "سحابة"
+           {
+      "id": "ras",
+      "name": "RAS",
+      "nameAr": "RAS",
+      "logo":"/partners/ras.png"
     },
-    {
-      "id": "googlecloud",
-      "name": "Google Cloud",
-      "nameAr": "جوجل كلاود",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/512px-Google_Cloud_logo.svg.png",
-      "category": "cloud",
-      "categoryAr": "سحابة"
-    },
-    {
-      "id": "mcafee",
-      "name": "McAfee",
-      "nameAr": "ماكافي",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/McAfee_logo_%282017%29.svg/512px-McAfee_logo_%282017%29.svg.png",
-      "category": "security",
-      "categoryAr": "أمان"
+               {
+      "id": "star-link",
+      "name": "Star Link",
+      "nameAr": "Star Link",
+      "logo":"/partners/star-link.png"
     }
-  ],
-  "categories": [
-    {
-      "id": "all",
-      "name": "All Partners",
-      "nameAr": "جميع الشركاء"
-    },
-    {
-      "id": "security",
-      "name": "Security Solutions",
-      "nameAr": "حلول الأمان"
-    },
-    {
-      "id": "cloud",
-      "name": "Cloud Services",
-      "nameAr": "خدمات السحابة"
-    },
-    {
-      "id": "network",
-      "name": "Network Infrastructure",
-      "nameAr": "البنية التحتية للشبكات"
-    },
-    {
-      "id": "technology",
-      "name": "Technology Partners",
-      "nameAr": "شركاء التكنولوجيا"
-    },
-    {
-      "id": "database",
-      "name": "Database Solutions",
-      "nameAr": "حلول قواعد البيانات"
-    }
-  ]
+    ]
 }

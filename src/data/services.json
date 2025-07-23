@@ -54,9 +54,10 @@
           }
         ]
       },
-      "img": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/09/Penetration-Testing-Services.jpg"
+      "img": "/services/Penetration-Testing.jpg",
+      "bannerImg": "/services/Penetration-Testing.jpg"
     },
+
     {
       "id": "vulnerability-assessment",
       "title": "تحليل شامل لتحديد نقاط الضعف في الأنظمة.",
@@ -111,8 +112,8 @@
           }
         ]
       },
-      "img": "https://securitypact.net/wp-content/uploads/2024/11/Vulnerability-Assessment.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Vulnerability-Assessment.jpg"},
+      "img": "/services/Vulnerability-Assessment.jpeg",
+      "bannerImg": "/services/Vulnerability-Assessment.jpeg"},
     {
       "id": "risk-assessment",
       "title": " تقييم دقيق للمخاطر الأمنية وتأثيرها على الأعمال.",
@@ -167,8 +168,8 @@
           }
         ]
       },
-           "img": "https://securitypact.net/wp-content/uploads/2024/11/Risk-Assessment.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Risk-Assessment.jpg"
+           "img": "/services/Risk Assessment.jpg",
+      "bannerImg": "/services/Risk Assessment.jpg"
     },
     {
       "id": "grc-service",
@@ -224,8 +225,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/11/GDPR-Compliance-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/GDPR-Compliance-Services.jpg"
+            "img": "/services/GRC Service and Transformation.jpeg",
+      "bannerImg": "/services/GRC Service and Transformation.jpeg"
     },
     {
       "id": "ics-scada-testing",
@@ -281,8 +282,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/11/Penetration-Testing-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Penetration-Testing-Services.jpg"
+            "img": "/services/ICS-SCADA Penetration Testing.jpg",
+      "bannerImg": "/services/ICS-SCADA Penetration Testing.jpg"
     },
     {
       "id": "configuration-review",
@@ -338,8 +339,8 @@
           }
         ]
       },
-           "img": "https://securitypact.net/wp-content/uploads/2024/11/Application-Security-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Application-Security-Services.jpg"
+           "img": "/services/Configuration Review.avif",
+      "bannerImg": "/services/Configuration Review.avif"
     },
     {
       "id": "secure-code-review",
@@ -452,8 +453,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/11/Red-Teaming.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Red-Teaming.jpg"
+            "img": "/services/Red Teaming.png",
+      "bannerImg": "/services/Red Teaming.png"
     },
     {
       "id": "social-engineering",
@@ -509,8 +510,8 @@
           }
         ]
       },
-            "img": "https://securitypact.net/wp-content/uploads/2024/11/SOAR-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/SOAR-Services.jpg"
+            "img": "/services/Social Engineering.jpg",
+            "bannerImg": "/services/Social Engineering.jpg"
     }
   ]
 }
