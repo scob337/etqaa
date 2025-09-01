@@ -53,12 +53,7 @@ export default function NavBar() {
               onClick={() => handleNavigation('/')} 
               className="flex items-center group cursor-pointer"
             >
-              <div className="bg-cyber-accent group-hover:bg-cyber-accent-dark p-1.5 rounded-lg transition-colors duration-300 w-8 h-8 flex items-center justify-center">
-                <FaShieldAlt className="text-cyber-dark" />
-              </div>
-              <span className={`${isRTL ? 'mr-2' : 'ml-2'} text-lg font-bold text-white group-hover:text-cyber-accent transition-colors duration-300`}>
-                ETQAA
-              </span>
+              <img src="./Logo.png" alt="Website Logo" className="w-20 h-20" />
             </div>
           </div>
           {/* Desktop Navigation */}

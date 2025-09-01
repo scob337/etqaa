@@ -31,13 +31,17 @@ export default function ContactForm() {
       formPayload.append('email', formData.email);
       formPayload.append('phone', formData.phone);
       formPayload.append('message', formData.message);
+      formPayload.append('_subject', 'New Contact Form Submission from Etqaa Website');
+      formPayload.append('_captcha', 'false');
+      formPayload.append('_template', 'table');
   
-      const response = await fetch('https://divaniworld.com/api/contact', {
+      const response = await fetch('https://formsubmit.co/abudaih@etqaa.com', {
         method: 'POST',
         body: formPayload,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
-  
-      const result = await response.json();
   
       if (response.ok) {
         setSuccess(true);
@@ -47,16 +51,13 @@ export default function ContactForm() {
           setSuccess(false);
         }, 5000);
       } else {
-        // Display the backend validation error message (e.g., message length too short)
-        if (result.message) {
-          setError(result.message); // Show the specific error message from the backend
-        } else {
-          setError('Form submission failed. Please try again later.');
-        }
+        const result = await response.text();
+        console.error('Form submission failed:', result);
+        setError(t('contact.form.error') || 'Form submission failed. Please try again later.');
       }
     } catch (err) {
       console.error('Failed to send message:', err);
-      setError('Failed to send message. Please try again later.');
+      setError(t('contact.form.error') || 'Failed to send message. Please try again later.');
     } finally {
       setLoading(false);
     }

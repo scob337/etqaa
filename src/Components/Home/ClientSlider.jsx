@@ -1,25 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import clientsData from '../../data/clients.json';
-import Partners from '../../data/partners.json'
-const SliderMarquee = ({ 
+
+const ClientSlider = ({ 
   clients = [], 
   showTitle = true,
   animationSpeed = 25, 
   className = "" 
 }) => {
-const Partner_IMG = Partners.partners.map(el =>{
-  return el.logo
-})
-  const images =  Partner_IMG
-
   const { t, i18n } = useTranslation();
   const [isPaused, setIsPaused] = useState(false);
+  const [hoveredClient, setHoveredClient] = useState(null);
   const [stats, setStats] = useState({ clients: 0, projects: 0, satisfaction: 0 });
   const isRTL = i18n.language === 'ar';
 
   // Use provided clients or default from JSON file
-  const clientsToShow = clients.length > 0 ? clients : images;
+  const clientsToShow = clients.length > 0 ? clients : clientsData.clients;
   
   // تكرار العملاء للحصول على تمرير لا نهائي سلس
   const repeatedClients = [...clientsToShow, ...clientsToShow, ...clientsToShow];
@@ -60,7 +56,7 @@ const Partner_IMG = Partners.partners.map(el =>{
         {showTitle && (
           <div className="text-center mb-16 ">
             <h2 className="text-4xl py-3 md:text-5xl font-bold bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent mb-4 tracking-wider">
-              {isRTL ? 'شركاؤنا' : 'Our Partners'}
+              {isRTL ? clientsData.title.ar : clientsData.title.en}
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               {isRTL ? clientsData.subtitle.ar : clientsData.subtitle.en}
@@ -83,21 +79,20 @@ const Partner_IMG = Partners.partners.map(el =>{
           >
             {repeatedClients.map((client, index) => (
               <div 
-                key={`${client}-${index}`}
+                key={`${client.id}-${index}`}
                 className="flex-shrink-0 group cursor-pointer relative"
+                onMouseEnter={() => setHoveredClient(client)}
+                onMouseLeave={() => setHoveredClient(null)}
               >
-                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl shadow-lg transition-all duration-500 group-hover:scale-110 group-hover:shadow-2xl overflow-hidden">
+                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl
+                
+                shadow-lg transition-all duration-500 group-hover:scale-110 group-hover:shadow-2xl overflow-hidden">
                   {/* خلفية متدرجة */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-50 opacity-95"></div>
-                  <div className="absolute inset-0 bg-gradient-to-tr from-cyan-50/30 via-transparent to-blue-50/30"></div>
-                  
-                  {/* حدود داخلية */}
-                  <div className="absolute inset-1 rounded-xl border border-gray-200/50"></div>
-                  
+
                   {/* الصورة */}
                   <img
-                    src={client}
-                    alt="Partner Logo"
+                    src={client.logo}
+                    alt={isRTL ? client.name : client.nameEn}
                     className="relative z-10 w-full h-full object-contain p-4 transition-all duration-500 group-hover:scale-110"
                     onError={(e) => {
                       e.target.style.display = 'none';
@@ -111,44 +106,51 @@ const Partner_IMG = Partners.partners.map(el =>{
                   <div className="absolute top-2 right-2 w-1 h-1 bg-cyan-400/60 rounded-full animate-ping opacity-0 group-hover:opacity-100"></div>
                 </div>
                 
-
+                {/* معلومات العميل عند التمرير */}
+                {hoveredClient && hoveredClient.id === client.id && (
+                  <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-br from-gray-900/95 via-slate-800/95 to-gray-900/95 backdrop-blur-lg rounded-xl shadow-2xl border border-cyan-400/40 p-5 min-w-72 max-w-sm z-[9999] animate-in fade-in duration-300">
+                    {/* خلفية متدرجة داخلية */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-600/5 rounded-xl"></div>
+                    
+                    {/* المحتوى */}
+                    <div className="relative z-10">
+                      <div className="text-center mb-3">
+                        <div className="inline-block p-2 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-lg mb-2">
+                          <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          </svg>
+                        </div>
+                      </div>
+                      
+                      <h3 className="font-bold text-lg bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent mb-2 text-center leading-tight">
+                        {isRTL ? client.name : client.nameEn}
+                      </h3>
+                      
+                      <div className="flex items-center justify-center mb-3">
+                        <div className="h-px bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent flex-1"></div>
+                        <div className="px-3">
+                          <span className="text-xs font-medium bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                            {isRTL ? client.sector : client.sectorEn}
+                          </span>
+                        </div>
+                        <div className="h-px bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent flex-1"></div>
+                      </div>
+                      
+                      <p className="text-gray-300 text-center leading-relaxed text-sm font-light">
+                        {isRTL ? client.description : client.descriptionEn}
+                      </p>
+                      
+                      {/* نقاط ضوئية متحركة */}
+                      <div className="absolute top-3 right-3 w-1.5 h-1.5 bg-cyan-400/60 rounded-full animate-ping"></div>
+                      <div className="absolute bottom-3 left-3 w-1 h-1 bg-blue-400/60 rounded-full animate-ping delay-500"></div>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
         </div>
-        
-        {/* إحصائيات العملاء */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-           <div className="text-center group">
-             <div className="inline-flex items-center justify-center w-16 h-16 bg-cyber-gradient rounded-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-               </svg>
-             </div>
-             <div className="text-3xl font-bold bg-cyber-gradient bg-clip-text text-transparent mb-2">{animatedStats.clients}+</div>
-             <div className="text-gray-300">{isRTL ? 'عميل مميز' : 'Distinguished Clients'}</div>
-           </div>
-           
-           <div className="text-center group">
-             <div className="inline-flex items-center justify-center w-16 h-16 bg-cyber-gradient rounded-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 714.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 713.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 710 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 710-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 713.138-3.138z" />
-               </svg>
-             </div>
-             <div className="text-3xl font-bold bg-cyber-gradient bg-clip-text text-transparent mb-2">{animatedStats.projects}+</div>
-             <div className="text-gray-300">{isRTL ? 'مشروع ناجح' : 'Successful Projects'}</div>
-           </div>
-           
-           <div className="text-center group">
-             <div className="inline-flex items-center justify-center w-16 h-16 bg-cyber-gradient rounded-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-               </svg>
-             </div>
-             <div className="text-3xl font-bold bg-cyber-gradient bg-clip-text text-transparent mb-2">{animatedStats.satisfaction}%</div>
-             <div className="text-gray-300">{isRTL ? 'رضا العملاء' : 'Client Satisfaction'}</div>
-           </div>
-        </div>
+ 
 
       </div>
 
@@ -176,6 +178,4 @@ const Partner_IMG = Partners.partners.map(el =>{
   );
 };
 
-
-
- export default SliderMarquee;
+export default ClientSlider;

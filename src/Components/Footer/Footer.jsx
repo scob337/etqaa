@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaShieldAlt, FaHome, FaInfoCircle, FaEnvelope, FaPhone, FaLock, FaUserShield, FaCloudDownloadAlt, FaServer } from 'react-icons/fa'
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaShieldAlt, FaHome, FaInfoCircle, FaEnvelope, FaPhone, FaLock, FaUserShield, FaCloudDownloadAlt, FaServer, FaWhatsapp } from 'react-icons/fa'
 import { SiSnapchat } from 'react-icons/si'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -39,9 +39,8 @@ const Footer = () => {
   ];
   
   const socialLinks = [
-    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/etqaa", label: "LinkedIn" },
-    { icon: <SiSnapchat />, href: "https://www.snapchat.com/add/etqaa", label: "Snapchat" },
-    { icon: <FaTwitter />, href: "https://twitter.com/etqaa", label: "Twitter" },
+    { icon: <FaLinkedinIn />, href: "http://linkedin.com/company/etqaa-company-for-cyber-%E2%80%8B%E2%80%8Bsecurity/", label: "LinkedIn" },
+    { icon: <FaTwitter />, href: "https://x.com/etqaaco?s=21", label: "Twitter" },
   ];
 
   useEffect(() => {
@@ -156,13 +155,19 @@ const Footer = () => {
                 <span className="w-9 h-9 bg-cyber-primary rounded-cyber flex items-center justify-center mr-3 group-hover:bg-cyber-accent/20 transition-colors">
                   <FaEnvelope className="text-cyber-accent" />
                 </span>
-                <a href="mailto:info@etqaa.com" className="text-white hover:text-cyber-accent  group-hover:translate-x-1 transition-all inline-block">info@etqaa.com</a>
+                <a href="mailto:abudaih@etqaa.com" className="text-white hover:text-cyber-accent  group-hover:translate-x-1 transition-all inline-block">abudaih@etqaa.com</a>
               </li>
               <li className="flex items-center group">
                 <span className="w-9 h-9 bg-cyber-primary rounded-cyber flex items-center justify-center mr-3 group-hover:bg-cyber-accent/20 transition-colors">
                   <FaPhone className="text-cyber-accent" />
                 </span>
-                <a href="tel:+966531100366" className="text-white hover:text-cyber-accent group-hover:translate-x-1 transition-all inline-block">+966 53 110 0366</a>
+                <a href="tel:+966 54 445 0138" className="text-white hover:text-cyber-accent group-hover:translate-x-1 transition-all inline-block">+966 54 445 0138</a>
+              </li>
+                            <li className="flex items-center group">
+                <span className="w-9 h-9 bg-cyber-primary rounded-cyber flex items-center justify-center mr-3 group-hover:bg-cyber-accent/20 transition-colors">
+                  <FaWhatsapp className="text-cyber-accent" />
+                </span>
+                <a href="https://api.whatsapp.com/send/?phone=966544450138&text&type=phone_number&app_absent=0" className="text-white hover:text-cyber-accent group-hover:translate-x-1 transition-all inline-block">+966 54 445 0138</a>
               </li>
               <li className="mt-4 pt-4 border-t border-cyber-gray-dark">
                 <p className="text-sm text-gray-400">

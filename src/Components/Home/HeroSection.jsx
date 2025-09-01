@@ -1,7 +1,6 @@
 import React from "react";
 import BG from '../../assets/HeroBanner.webp';
 import { motion } from "framer-motion";
-import SliderMarquee from "./HeroSlider";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FaShieldAlt, FaLock, FaServer } from "react-icons/fa";
@@ -59,21 +58,7 @@ const HeroSection = () => {
           {/* Overlay أسود شفاف لتحسين وضوح النص */}
           <div className="absolute inset-0 bg-black/60 z-0"></div>
 
-          {/* Digital circuit pattern overlay */}
-          <div className="absolute inset-0 bg-cyber-dark/30 z-0 overflow-hidden opacity-20">
-            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-              <pattern id="circuit-hero" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <path d="M20 20 H80 V80 H20 Z" fill="none" stroke="currentColor" strokeWidth="1" className="text-cyber-accent/40" />
-                <circle cx="20" cy="20" r="2" className="fill-cyber-accent/40" />
-                <circle cx="80" cy="20" r="2" className="fill-cyber-accent/40" />
-                <circle cx="20" cy="80" r="2" className="fill-cyber-accent/40" />
-                <circle cx="80" cy="80" r="2" className="fill-cyber-accent/40" />
-                <path d="M20 50 H40 V20" fill="none" stroke="currentColor" strokeWidth="1" className="text-cyber-accent/40" />
-                <path d="M50 80 V60 H80" fill="none" stroke="currentColor" strokeWidth="1" className="text-cyber-accent/40" />
-              </pattern>
-              <rect width="100%" height="100%" fill="url(#circuit-hero)" />
-            </svg>
-          </div>
+ 
 
           {/* Decorative elements */}
           <div className="absolute inset-0 overflow-hidden z-0">
@@ -140,7 +125,6 @@ const HeroSection = () => {
               ))}
             </motion.div>
 
-            <SliderMarquee />
           </motion.div>
         </div>
       </div>

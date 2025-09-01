@@ -1,0 +1,162 @@
+{
+  "title": {
+    "ar": "عملاؤنا المميزون",
+    "en": "Our Distinguished Clients"
+  },
+  "subtitle": {
+    "ar": "نفخر بثقة كبرى الشركات والمؤسسات في خدماتنا الأمنية المتطورة",
+    "en": "We are proud of the trust of major companies and institutions in our advanced security services"
+  },
+  "clients": [
+    {
+      "id": 1,
+      "name": "إكسلوج",
+      "nameEn": "Exlog",
+      "logo": "/clients/exlog.svg",
+      "description": "شركة رائدة في مجال الخدمات اللوجستية والنقل، تقدم حلولاً متكاملة لسلسلة التوريد",
+      "descriptionEn": "A leading company in logistics and transportation services, providing integrated supply chain solutions",
+      "sector": "الخدمات اللوجستية",
+      "sectorEn": "Logistics Services"
+    },
+    {
+      "id": 2,
+      "name": "أسترا الصناعية",
+      "nameEn": "Astra Industrial",
+      "logo": "/clients/أسترا الصناعية.png",
+      "description": "شركة صناعية متخصصة في تصنيع المنتجات الصناعية عالية الجودة للسوق المحلي والإقليمي",
+      "descriptionEn": "An industrial company specialized in manufacturing high-quality industrial products for local and regional markets",
+      "sector": "الصناعات التحويلية",
+      "sectorEn": "Manufacturing Industries"
+    },
+    {
+      "id": 3,
+      "name": "الجاسرية للتمويل",
+      "nameEn": "Al Jasriah Finance",
+      "logo": "/clients/الجاسرية للتمويل.png",
+      "description": "شركة تمويل رائدة تقدم حلولاً مالية مبتكرة ومتوافقة مع أحكام الشريعة الإسلامية",
+      "descriptionEn": "A leading finance company providing innovative financial solutions compliant with Islamic Sharia principles",
+      "sector": "الخدمات المالية",
+      "sectorEn": "Financial Services"
+    },
+    {
+      "id": 4,
+      "name": "السعودية العالمية للموانئ",
+      "nameEn": "Saudi Global Ports",
+      "logo": "/clients/السعودية العالميه للموانئ.svg",
+      "description": "شركة عالمية رائدة في إدارة وتشغيل الموانئ والخدمات البحرية واللوجستية",
+      "descriptionEn": "A leading global company in port management, operation, and maritime logistics services",
+      "sector": "الموانئ والخدمات البحرية",
+      "sectorEn": "Ports & Maritime Services"
+    },
+    {
+      "id": 5,
+      "name": "العثمان القابضة",
+      "nameEn": "Al Othman Holding",
+      "logo": "/clients/العثمان القابضة.svg",
+      "description": "مجموعة استثمارية متنوعة تضم شركات في قطاعات مختلفة من الاقتصاد السعودي",
+      "descriptionEn": "A diversified investment group comprising companies in various sectors of the Saudi economy",
+      "sector": "الاستثمار والقابضة",
+      "sectorEn": "Investment & Holding"
+    },
+    {
+      "id": 6,
+      "name": "بن يعلا للصرافة",
+      "nameEn": "Bin Yaala Exchange",
+      "logo": "/clients/بن يعلا للصرافة.webp",
+      "description": "شركة صرافة رائدة تقدم خدمات تحويل الأموال وصرف العملات بأعلى معايير الأمان",
+      "descriptionEn": "A leading exchange company providing money transfer and currency exchange services with the highest security standards",
+      "sector": "الخدمات المالية",
+      "sectorEn": "Financial Services"
+    },
+    {
+      "id": 7,
+      "name": "بي كير",
+      "nameEn": "B Care",
+      "logo": "/clients/بي كير.svg",
+      "description": "شركة متخصصة في الرعاية الصحية وتقديم الخدمات الطبية المتطورة",
+      "descriptionEn": "A company specialized in healthcare and providing advanced medical services",
+      "sector": "الرعاية الصحية",
+      "sectorEn": "Healthcare"
+    },
+    {
+      "id": 8,
+      "name": "شركة المراجل السعودية",
+      "nameEn": "Saudi Boilers Company",
+      "logo": "/clients/شركة المراجل السعودية.svg",
+      "description": "شركة متخصصة في تصنيع وصيانة المراجل والمعدات الصناعية الثقيلة",
+      "descriptionEn": "A company specialized in manufacturing and maintaining boilers and heavy industrial equipment",
+      "sector": "الصناعات الثقيلة",
+      "sectorEn": "Heavy Industries"
+    },
+    {
+      "id": 9,
+      "name": "شركة موافقة",
+      "nameEn": "Muwafaqa Company",
+      "logo": "/clients/شركة موافقة.svg",
+      "description": "شركة تقنية رائدة تقدم حلولاً رقمية مبتكرة للشركات والمؤسسات",
+      "descriptionEn": "A leading technology company providing innovative digital solutions for businesses and institutions",
+      "sector": "التقنية والحلول الرقمية",
+      "sectorEn": "Technology & Digital Solutions"
+    },
+    {
+      "id": 10,
+      "name": "صندوق التنمية العقارية",
+      "nameEn": "Real Estate Development Fund",
+      "logo": "/clients/صندوق التنمية العقارية.svg",
+      "description": "صندوق حكومي يهدف إلى تمويل وتطوير القطاع العقاري في المملكة العربية السعودية",
+      "descriptionEn": "A government fund aimed at financing and developing the real estate sector in Saudi Arabia",
+      "sector": "التطوير العقاري",
+      "sectorEn": "Real Estate Development"
+    },
+    {
+      "id": 11,
+      "name": "فيول للتمويل",
+      "nameEn": "Fuel Finance",
+      "logo": "/clients/فيول للتمويل.jpeg",
+      "description": "شركة تمويل متخصصة في قطاع الطاقة والوقود، تقدم حلولاً مالية مبتكرة",
+      "descriptionEn": "A finance company specialized in the energy and fuel sector, providing innovative financial solutions",
+      "sector": "التمويل المتخصص",
+      "sectorEn": "Specialized Finance"
+    },
+    {
+      "id": 12,
+      "name": "مجموعة الجريسي",
+      "nameEn": "Al Juraisi Group",
+      "logo": "/clients/مجموعة الجريسي.png",
+      "description": "مجموعة تجارية واستثمارية رائدة تعمل في قطاعات متنوعة من الاقتصاد السعودي",
+      "descriptionEn": "A leading commercial and investment group operating in various sectors of the Saudi economy",
+      "sector": "التجارة والاستثمار",
+      "sectorEn": "Trade & Investment"
+    },
+    {
+      "id": 13,
+      "name": "نابكو الوطنية",
+      "nameEn": "Nabco National",
+      "logo": "/clients/نابكو الوطنية.png",
+      "description": "شركة وطنية رائدة في مجال الصناعات والخدمات التقنية المتطورة",
+      "descriptionEn": "A leading national company in advanced industries and technical services",
+      "sector": "الصناعات التقنية",
+      "sectorEn": "Technical Industries"
+    },
+    {
+      "id": 14,
+      "name": "وزارة الصحة",
+      "nameEn": "Ministry of Health",
+      "logo": "/clients/وزارة الصحة.png",
+      "description": "الجهة الحكومية المسؤولة عن تطوير وتنظيم القطاع الصحي في المملكة العربية السعودية",
+      "descriptionEn": "The government entity responsible for developing and regulating the health sector in Saudi Arabia",
+      "sector": "القطاع الحكومي",
+      "sectorEn": "Government Sector"
+    },
+    {
+      "id": 15,
+      "name": "ولاء للتأمين",
+      "nameEn": "Walaa Insurance",
+      "logo": "/clients/ولاء للتأمين.png",
+      "description": "شركة تأمين رائدة تقدم مجموعة شاملة من منتجات التأمين للأفراد والشركات",
+      "descriptionEn": "A leading insurance company providing a comprehensive range of insurance products for individuals and businesses",
+      "sector": "التأمين",
+      "sectorEn": "Insurance"
+    }
+  ]
+}

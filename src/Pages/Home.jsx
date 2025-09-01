@@ -7,6 +7,8 @@ import ScopeWork from '../Components/Home/ScopeWork'
 import EndSection from '../Components/Home/EndSection'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
+import SliderMarquee from '../Components/Home/HeroSlider'
+import ClientSlider from '../Components/Home/ClientSlider'
 
 const Home = () => {
   const {  i18n } = useTranslation();
@@ -25,7 +27,8 @@ const Home = () => {
       <HeroSection/>
       <About/>
       <ServicesComp/>
-      
+      <SliderMarquee />
+      <ClientSlider />
       <WhyUs/>
       <ScopeWork/>
       <EndSection />

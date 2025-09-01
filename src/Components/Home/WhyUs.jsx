@@ -63,26 +63,7 @@ const containerVariants = {
 };
 
 // Digital circuit background pattern for cyber security theme
-const DigitalCircuitPattern = () => (
-  <div className="absolute inset-0 overflow-hidden opacity-10 pointer-events-none">
-    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="circuit-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-          <path d="M20 20 H80 V80 H20 Z" fill="none" stroke="currentColor" strokeWidth="1" className="text-cyber-accent" />
-          <circle cx="20" cy="20" r="2" className="fill-cyber-accent" />
-          <circle cx="80" cy="20" r="2" className="fill-cyber-accent" />
-          <circle cx="20" cy="80" r="2" className="fill-cyber-accent" />
-          <circle cx="80" cy="80" r="2" className="fill-cyber-accent" />
-          <path d="M20 50 H40 V20" fill="none" stroke="currentColor" strokeWidth="1" className="text-cyber-accent" />
-          <path d="M50 80 V60 H80" fill="none" stroke="currentColor" strokeWidth="1" className="text-cyber-accent" />
-          <circle cx="40" cy="20" r="2" className="fill-cyber-accent" />
-          <circle cx="50" cy="80" r="2" className="fill-cyber-accent" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#circuit-pattern)" />
-    </svg>
-  </div>
-);
+
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40, scale: 0.97 },
@@ -95,7 +76,6 @@ const WhyUs = () => {
   
   return (
     <section className="py-20 bg-cyber-primary min-h-[60vh] relative overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
-      <DigitalCircuitPattern />
       
       {/* Animated background elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-cyber-blue/20 rounded-full filter blur-3xl animate-pulse-slow"></div>

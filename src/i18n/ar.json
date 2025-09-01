@@ -156,16 +156,13 @@
       },
       "phone": {
         "label": "الهاتف",
-        "value": "+966 XX XXX XXXX"
+        "value": "+966 54 445 0138"
       },
       "email": {
         "label": "البريد الإلكتروني",
-        "value": "info@etqaa.com"
+        "value": "abudaih@etqaa.com"
       },
-      "hours": {
-        "label": "ساعات العمل",
-        "value": "الأحد - الخميس: ٩:٠٠ ص - ٥:٠٠ م"
-      },
+
       "social": "وسائل التواصل الاجتماعي"
     }
   },

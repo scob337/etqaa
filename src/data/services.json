@@ -396,8 +396,8 @@
           }
         ]
       },
-      "img": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg",
-      "bannerImg": "https://securitypact.net/wp-content/uploads/2024/11/Data-Loss-Prevention-DLP-Services.jpg"
+      "img": "/services/secure-code.jpeg",
+      "bannerImg":"./services/secure-code.jpeg"
     },
     {
       "id": "red-teaming",
@@ -510,8 +510,8 @@
           }
         ]
       },
-            "img": "/services/Social Engineering.jpg",
-            "bannerImg": "/services/Social Engineering.jpg"
+            "img": "/services/Social Engineering.jpeg",
+            "bannerImg": "/services/Social Engineering.jpeg"
     }
   ]
 }
