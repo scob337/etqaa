@@ -67,6 +67,12 @@
       "name": "Star Link",
       "nameAr": "Star Link",
       "logo":"/partners/star-link.png"
+    },
+    {
+      "id": "tenable",
+      "name": "Tenable",
+      "nameAr": "Tenable",
+      "logo":"/partners/tenable.png"
     }
     ]
 }

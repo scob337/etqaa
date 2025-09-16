@@ -157,6 +157,16 @@
       "descriptionEn": "A leading insurance company providing a comprehensive range of insurance products for individuals and businesses",
       "sector": "التأمين",
       "sectorEn": "Insurance"
+    },
+        {
+      "id": 16,
+      "name": "Himma for Financing",
+      "nameEn": "Himma for Financing",
+      "logo": "/clients/himma.svg",
+      "description": "شركة متخصصة في تمويل الفواتير (Invoice Financing) موجهة لـ SMEs في السعودية.",
+      "descriptionEn": "A company specialized in invoice financing, dedicated to serving SMEs in Saudi Arabia.",
+      "sector": "الخدمات المالية",
+      "sectorEn": "Financial Services"
     }
   ]
 }

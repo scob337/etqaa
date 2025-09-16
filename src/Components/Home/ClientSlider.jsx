@@ -51,7 +51,7 @@ const ClientSlider = ({
         <div className="absolute bottom-1/4 left-2/3 w-1.5 h-1.5 bg-purple-400/60 rounded-full animate-ping delay-1000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 w-full mx-auto px-4 sm:px-6 lg:px-8">
         {/* العنوان والوصف */}
         {showTitle && (
           <div className="text-center mb-16 ">
@@ -66,15 +66,16 @@ const ClientSlider = ({
 
         {/* السلايدر */}
         <div 
-          className="relative overflow-hidden rounded-3xl bg-gray-800/40 backdrop-blur-sm border border-gray-700/30 shadow-2xl p-8"
+          className="relative overflow-hidden rounded-3xl bg-gray-800/40 backdrop-blur-sm border border-gray-700/30 shadow-2xl p-6 mx-4"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
           <div 
-            className={`flex space-x-8 ${isRTL ? 'space-x-reverse' : ''}`}
+            className={`flex space-x-6 ${isRTL ? 'space-x-reverse' : ''}`}
             style={{
               animation: `scroll-${isRTL ? 'rtl' : 'ltr'} ${animationSpeed}s linear infinite`,
-              animationPlayState: isPaused ? 'paused' : 'running'
+              animationPlayState: isPaused ? 'paused' : 'running',
+              width: 'max-content'
             }}
           >
             {repeatedClients.map((client, index) => (
